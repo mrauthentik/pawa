@@ -1,11 +1,12 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
-import Landing from './Components/Landing'
+import router from './Router/router';
 function App() {
   
 
   return (
     <div> 
-      <Landing />
+      <RouterProvider router={router} />
     </div>
   )
 }
