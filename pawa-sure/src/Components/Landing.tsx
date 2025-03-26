@@ -1,9 +1,9 @@
 import React from "react"
-
+import img from '../assets/images/home-icon.png'
 const Landing: React.FC = () => {
 	return (
-		<div>
-			<h1>PawaSure</h1>
+		<div className="landing-container">
+			<img src={img} alt="" />
 		</div>
 	);
 }
