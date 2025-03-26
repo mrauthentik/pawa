@@ -3,7 +3,7 @@ import Landing from '../Components/Landing'
 
 const router = createBrowserRouter([
     {
-        path:'/landing',
+        path:'/',
         element: <Landing />
     }
 ])
