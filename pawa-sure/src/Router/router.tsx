@@ -7,3 +7,5 @@ const router = createBrowserRouter([
         element: <Landing />
     }
 ])
+
+export default router
