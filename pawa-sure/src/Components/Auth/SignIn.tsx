@@ -24,7 +24,7 @@
                  <div className="forget">
                     <div className="remeber-input">
                         <input type="checkbox"  className='check'/>
-                        <label htmlFor="remeber">Remember Me</label>
+                        <label htmlFor="remeber" className='remember-text'>Remember Me</label>
                     </div>
                     <Link to='/forgot-password' className='forget-link'>Forgot Password?</Link>
                  </div>
