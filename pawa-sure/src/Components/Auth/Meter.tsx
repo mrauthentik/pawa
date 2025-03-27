@@ -31,6 +31,7 @@ const Meter: React.FC = ()=>{
                
                 <label htmlFor="Location">Location</label>
                 <Select name="location" 
+                        className='select'
                         required
                         placeholder="Please select Your Location"
                         indicator={<KeyboardArrowDown/>}
@@ -84,6 +85,7 @@ const Meter: React.FC = ()=>{
                 </Select>
                 <label htmlFor="provider">Select Your Service Provider/estate</label>
                 <Select name="provider" 
+                        className='select'
                         required
                         placeholder="Please Select Your provider/estate"
                         indicator={<KeyboardArrowDown/>}
@@ -114,6 +116,7 @@ const Meter: React.FC = ()=>{
 
                 <label htmlFor="meterType">Account/Meter Type</label>
                 <Select name="meterType"
+                         className='select'
                          required 
                          placeholder='Please Select Your Meter Type'
                          indicator={<KeyboardArrowDown/>}
