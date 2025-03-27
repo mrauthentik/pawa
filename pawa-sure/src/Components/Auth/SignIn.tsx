@@ -21,8 +21,14 @@
                 <input type="email" placeholder='Enter Your Email' required/>
                 <label htmlFor="password">Password</label>
                 <input type="password" placeholder='Enter Your Password' required/>
-                <p className='mini-text'>Forgot Password?</p>
-                <button type='submit'>Sign in</button>
+                 <div className="forget">
+                    <div className="remeber-input">
+                        <input type="checkbox"  />
+                        <label htmlFor="remeber">Remember Me</label>
+                    </div>
+                    <Link to='/forgot-password'>Forgot Password?</Link>
+                 </div>
+                <button type='submit' onClick={()=> navigate('/dashboard')}>Sign in</button>
                 <p className='signin-text'>Don't have an account? <Link to='/signup'>Sign up</Link></p>
             </form>
         </div>
