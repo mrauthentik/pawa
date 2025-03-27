@@ -4,7 +4,9 @@ import logo from '../../assets/images/home-icon.png'
 const SignUp: React.FC = ()=>{
     return(
         <div className='signup-container'>
+            <div className="signup-img">
             <img src={logo} alt='PawaSure Logo' />
+            </div>
             <div className="signup-header-text">
                 <h1>Join PawaSure Today</h1>
             </div>
