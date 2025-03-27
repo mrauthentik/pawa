@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate  } from 'react-router-dom'
 
-import logo from '../../assets/images/home-icon.png'
+import logo from '../../assets/images/pawa.svg'
 
 const SignUp: React.FC = ()=>{
     const [password, setPassword] = React.useState('')
