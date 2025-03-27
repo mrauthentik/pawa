@@ -12,7 +12,7 @@ const SignUp: React.FC = ()=>{
        
         if(password !== confirmPassword){
             alert('Passwords do not match')
-            return
+            return 
         }else{
            navigate('/signup-success') 
         }
