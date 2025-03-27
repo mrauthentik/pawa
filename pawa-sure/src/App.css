@@ -5,6 +5,7 @@
 :root{
     --yellow: #FFC107;
     --blue: #1A1A2E;
+    --bg-color: #FFFCF6;
 }
 
 /* #########  Global styles ########### */
@@ -26,5 +27,7 @@
 
 
 /* #########  SignUp styles ########### */
-
+.signup-container{
+    background-color: var(--bg-color);
+}
 /* #########  SignUp styles end here ########### */

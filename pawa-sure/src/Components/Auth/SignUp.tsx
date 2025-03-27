@@ -6,7 +6,7 @@ const SignUp: React.FC = ()=>{
         <div className='signup-container'>
             <img src={logo} alt='PawaSure Logo' />
             <div className="signup-header-text">
-                <h1>Join PawaSure Today</h1>0
+                <h1>Join PawaSure Today</h1>
             </div>
             <div className="signup-mini-text">
                 <p>Take full control of your electricity <br />
