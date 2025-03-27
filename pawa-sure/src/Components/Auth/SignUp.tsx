@@ -49,7 +49,9 @@ const SignUp: React.FC = ()=>{
                             required
                         />
                         <button type='submit' className='signup-btn'>Sign Up</button>
+                        <div className="already-a-member">
                         <p>Already a Member? <a href='/login'>Sign In</a></p>
+                        </div>
                     </form>
                 
             </div>
