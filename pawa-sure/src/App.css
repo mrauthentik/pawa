@@ -263,8 +263,9 @@ button:active{
     .select{
         outline: none;
         height: 70px;
-        padding: 0.5rem 1rem;
-        
+        padding: 0;
+        color: var(--small-text);
+        padding-left: 1rem;
         ::placeholder{
             color: var(--small-text);
             font-weight: 100;
