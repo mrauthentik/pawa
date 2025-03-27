@@ -7,6 +7,7 @@
     --blue: #1A1A2E;
     --bg-color: #FFFCF6;
     --primary: #1E1E1E;
+    --grey: #D3D3D3;
 }
 
 /* #########  Global styles ########### */
@@ -52,6 +53,20 @@
     form{
         display: flex;
         flex-direction: column;
+        label{
+            margin-bottom: 0.5rem;;
+        }
+        input{
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--grey);
+            background-color: white;
+            border-radius: 8px;
+            outline:#FFC107;
+        }
+        input:focus{
+            border: 2px solid var(--yellow);
+        }
     }
 }
 /* #########  SignUp styles end here ########### */
