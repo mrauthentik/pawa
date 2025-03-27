@@ -23,7 +23,7 @@
                 <input type="password" placeholder='Enter Your Password' required/>
                  <div className="forget">
                     <div className="remeber-input">
-                        <input type="checkbox"  />
+                        <input type="checkbox"  className='check'/>
                         <label htmlFor="remeber">Remember Me</label>
                     </div>
                     <Link to='/forgot-password' className='forget-link'>Forgot Password?</Link>
