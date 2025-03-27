@@ -5,7 +5,7 @@ import img from '../assets/images/404.svg'
 const NotFound:React.FC = ()=>{
     const navigate = useNavigate()
     return(
-        <div className='404-container'>
+        <div className='not-found-container'>
             <img src={img} alt="" />
             <div className="header">
                 <p>Page Not Found</p>

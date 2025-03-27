@@ -306,3 +306,30 @@ button:active{
 }
 
 /* ###########  Meter Warning styles ends here ##########*/
+
+/* ###########  404 styles ##########*/
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    text-align: center;
+    .header{
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary);
+        margin-top:2rem;
+    }
+    .mini-text{
+        font-size: 16px;
+        color: var(--small-text);
+        margin-bottom: 1rem;
+    }
+    button{
+        margin-top: 2rem;
+        font-size: 16px;
+    }
+}
+/* ###########  404 styles ends here ##########*/
