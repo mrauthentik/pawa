@@ -6,6 +6,7 @@ import Meter from '../Components/Auth/Meter'
 import MeterSuccess from '../Components/Auth/MeterSuccess'
 import SignIn from '../Components/Auth/SignIn'
 import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
+import NotFound from '../Components/NotFound'
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
     {
         path:'/invalid',
         element: <FailedMeterNumber />
+    },
+    {
+        path:'*',
+        element: <NotFound />
     },
 ])
 
