@@ -122,6 +122,52 @@ button:active{
 /* #########  SignUp styles end here ########### */
 
 
+/* #########  SignIn styles  ########### */
+.signin-container{
+    background-color: var(--bg-color);
+    padding-left: 1rem;
+    .logo{
+        padding-top: 2rem;
+        
+    }
+    .header{
+        margin-top: 3rem;
+        font-size: 24px;
+        font-weight: 700;
+    }.mini-text{
+        margin-bottom: 3rem;
+        color: var(--small-text);
+        font-size: 16px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        label{
+            margin-bottom: 0.4rem;
+            font-weight: 400;
+            color: var(--primary);
+        }
+        input{
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            width: 95%;
+            border: 1px solid var(--grey);
+            background-color: white;
+            border-radius: 8px;
+            outline:#FFC107;
+        }
+        input:focus{
+            border: 2px solid var(--yellow);
+        }
+       
+      
+    }
+}
+ 
+/* #########  SignIn styles end here ########### */
+
+
+
 /* #########  Sign up Success styles ########### */
 
 .signup-success-container{
