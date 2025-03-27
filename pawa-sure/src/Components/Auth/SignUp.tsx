@@ -48,7 +48,7 @@ const SignUp: React.FC = ()=>{
                             placeholder='Confirm your password' 
                             required
                         />
-                        <button type='submit'>Sign Up</button>
+                        <button type='submit' className='signup-btn'>Sign Up</button>
                         <p>Already a Member? <a href='/login'>Sign In</a></p>
                     </form>
                 
