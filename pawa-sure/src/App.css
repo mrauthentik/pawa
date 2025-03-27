@@ -271,6 +271,9 @@ button:active{
             font-weight: 100;
         }
     }
+    .select:focus{
+       outline:var(--yellow);
+    } 
     input:focus{
         border: 2px solid var(--yellow);
     }
