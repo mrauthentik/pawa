@@ -26,7 +26,7 @@
                         <input type="checkbox"  />
                         <label htmlFor="remeber">Remember Me</label>
                     </div>
-                    <Link to='/forgot-password'>Forgot Password?</Link>
+                    <Link to='/forgot-password' className='forget-link'>Forgot Password?</Link>
                  </div>
                 <button type='submit' onClick={()=> navigate('/dashboard')}>Sign in</button>
                 <p className='signin-text'>Don't have an account? <Link to='/signup'>Sign up</Link></p>
