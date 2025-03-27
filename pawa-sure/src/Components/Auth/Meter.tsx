@@ -1,7 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import img from '../../assets/images/pawa.svg'
 
 const Meter: React.FC = ()=>{
+    const navigate = useNavigate()
+    const handleSubmit = ()=>{
+        console.log('submitted')
+        navigate('/meter-success')
+
+    }
     return(
         <div className='meter-container'>
             <div className="logo">
@@ -16,7 +23,7 @@ const Meter: React.FC = ()=>{
 
             <form>
                 <label htmlFor="meternumber">Meter Number/Account Number</label>
-                <input type="text" placeholder='Enter Your Meter Number' required/>
+                <input type="number" placeholder='Enter Your Meter Number' required/>
                
                 <label htmlFor="Location">Location</label>
                 <select name="location" id="" required>
@@ -81,7 +88,7 @@ const Meter: React.FC = ()=>{
                     <option value=""> Prepaid</option>
                     <option value=""> Postpaid</option>
                 </select>
-                <button type='submit'>Add Meter</button>
+                <button type='submit' onClick={handleSubmit}>Add Meter</button>
             </form>
         </div>
     )
