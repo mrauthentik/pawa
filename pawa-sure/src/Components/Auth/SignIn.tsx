@@ -3,6 +3,7 @@
  import img from '../../assets/images/pawa.svg'
 
  const SignIn: React.FC =  ()=>{
+    const navigate = useNavigate()
   return (
     <div className="signin-container">
         <div className="logo">
