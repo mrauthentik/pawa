@@ -8,7 +8,7 @@ const SignUp: React.FC = ()=>{
             <img src={logo} alt='PawaSure Logo' />
             </div>
             <div className="signup-header-text">
-                <h1>Join PawaSure Today</h1>
+                <p>Join PawaSure Today</p>
             </div>
             <div className="signup-mini-text">
                 <p>Take full control of your electricity <br />
