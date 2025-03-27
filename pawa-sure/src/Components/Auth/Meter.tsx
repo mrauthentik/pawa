@@ -83,19 +83,33 @@ const Meter: React.FC = ()=>{
                 <Option value="fct">Federal Capital Territory (Abuja)</Option>
                 </Select>
                 <label htmlFor="provider">Select Your Service Provider/estate</label>
-                <Select name="provider" id="" required>
-                    <option value="">Please Select Your provider/estate</option>
-                    <option value="AEDC"> Abuja Electricity Distribution Company (AEDC)</option>
-                    <option value="BEDC">Benin Electricity Distribution Company (BEDC)</option>
-                    <option value="EKEDC">Eko Electricity Distribution Company (EKEDC)</option>
-                    <option value="EEDC">Enugu Electricity Distribution Company (EEDC)</option>
-                    <option value="IBEDC">Ibadan Electricity Distribution Company (IBEDC)</option>
-                    <option value="IE">Ikeja Electric (IE)</option>
-                    <option value="JEDC">Jos Electricity Distribution Company (JEDC)</option>
-                    <option value="KEDC">Kaduna Electricity Distribution Company (KEDC)</option>
-                    <option value="KEDCO">Kano Electricity Distribution Company (KEDCO)</option>
-                    <option value="PHEDC">Port Harcourt Electricity Distribution Company (PHEDC)</option>
-                    <option value="YEDC">Yola Electricity Distribution Company (YEDC)</option>
+                <Select name="provider" 
+                        required
+                        placeholder="Please Select Your provider/estate"
+                        indicator={<KeyboardArrowDown/>}
+                        sx={{
+                            width:240,
+                            [`& .${selectClasses.indicator}`]:{
+                             transition: `0.2s`,
+                             [`& .${selectClasses.expanded}`]:{
+                                transform: `rotate(-180deg)`,
+                             },
+                            },
+                         }}
+                 
+                >
+                    <Option value="">Please Select Your provider/estate</Option>
+                    <Option value="AEDC"> Abuja Electricity Distribution Company (AEDC)</Option>
+                    <Option value="BEDC">Benin Electricity Distribution Company (BEDC)</Option>
+                    <Option value="EKEDC">Eko Electricity Distribution Company (EKEDC)</Option>
+                    <Option value="EEDC">Enugu Electricity Distribution Company (EEDC)</Option>
+                    <Option value="IBEDC">Ibadan Electricity Distribution Company (IBEDC)</Option>
+                    <Option value="IE">Ikeja Electric (IE)</Option>
+                    <Option value="JEDC">Jos Electricity Distribution Company (JEDC)</Option>
+                    <Option value="KEDC">Kaduna Electricity Distribution Company (KEDC)</Option>
+                    <Option value="KEDCO">Kano Electricity Distribution Company (KEDCO)</Option>
+                    <Option value="PHEDC">Port Harcourt Electricity Distribution Company (PHEDC)</Option>
+                    <Option value="YEDC">Yola Electricity Distribution Company (YEDC)</Option>
                 </Select>
 
                 <label htmlFor="meterType">Account/Meter Type</label>
