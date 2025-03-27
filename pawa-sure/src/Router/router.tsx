@@ -5,6 +5,7 @@ import SignUpSuccess from '../Components/Auth/SignUpSuccess'
 import Meter from '../Components/Auth/Meter'
 import MeterSuccess from '../Components/Auth/MeterSuccess'
 import SignIn from '../Components/Auth/SignIn'
+import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path:'/signin',
         element: <SignIn />
+    },
+    {
+        path:'/invalid',
+        element: <FailedMeterNumber />
     },
 ])
 
