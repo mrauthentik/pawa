@@ -77,7 +77,7 @@ const SignUp: React.FC = ()=>{
                             Sign Up
                             </button>
                         <div className="already-a-member">
-                        <p>Already a Member? <a href='/login'>Sign In</a></p>
+                        <p>Already a Member? <a href='/signin'>Sign In</a></p>
                         </div>
                     </form>
                 
