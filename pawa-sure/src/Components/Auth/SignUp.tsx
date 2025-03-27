@@ -27,7 +27,7 @@ const SignUp: React.FC = ()=>{
                 </p>
             </div>
                 <div className="signup-form">
-                    <form action="#" onSubmit={()=>handleSignUp}>
+                    <form onSubmit={()=>handleSignUp}>
                         <label htmlFor="fullname">Full Name</label>
                         <input 
                             type="text" 
