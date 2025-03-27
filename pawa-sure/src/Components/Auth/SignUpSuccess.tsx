@@ -15,7 +15,7 @@ const SignUpSuccess: React.FC = ()=>{
                     seamless experience.
                 </p>
             </div>
-            <button><Link to="/signin" className='link'>Connect Meter</Link> </button>
+            <button><Link to="/meter" className='link'>Connect Meter</Link> </button>
         </div>
     )
 }

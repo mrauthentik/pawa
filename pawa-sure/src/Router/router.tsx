@@ -2,6 +2,7 @@ import {createBrowserRouter} from 'react-router-dom'
 import Landing from '../Components/Landing'
 import SignUp from '../Components/Auth/SignUp'
 import SignUpSuccess from '../Components/Auth/SignUpSuccess'
+import Meter from '../Components/Auth/Meter'
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     {
         path:'/signup-success',
         element: <SignUpSuccess /> 
+    },
+    {
+        path:'/meter',
+        element: <Meter />
     },
 ])
 

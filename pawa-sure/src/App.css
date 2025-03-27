@@ -20,6 +20,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 button{
     cursor: pointer;
     background-color: var(--yellow);
@@ -148,3 +149,8 @@ button:active{
     }
 }
 /* #########  Sign up Success styles ends here ########### */
+
+
+/* Add meter styles */
+
+/* Add meter styles ends here */
