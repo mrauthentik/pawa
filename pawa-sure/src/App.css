@@ -9,6 +9,8 @@
     --primary: #1E1E1E;
     --grey: #D3D3D3;
     --small-text: #474747;
+    --btn-hover: #FCCC32;
+    --btn-active: #E9A800;
 }
 
 /* #########  Global styles ########### */
@@ -30,7 +32,14 @@ button{
     margin-bottom: 1rem;
 }
 button:hover{
-    background-color: #FFA000;
+    background-color: var(--btn-hover);
+}
+button:active{
+    background-color: var(--btn-active);
+}
+.link{
+    text-decoration: none;
+    color: var(--primary);
 }
 
 /* #########  Landing page syles ########### */

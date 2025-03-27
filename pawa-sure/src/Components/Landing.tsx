@@ -2,7 +2,7 @@ import React, {useEffect} from "react"
 import { useNavigate } from "react-router-dom"
 import {motion} from "framer-motion"
 
-import img from '../assets/images/home-icon.png'
+import img from '../assets/images/home-logo.svg'
 
 const Landing: React.FC = () => {
     const navigate = useNavigate()

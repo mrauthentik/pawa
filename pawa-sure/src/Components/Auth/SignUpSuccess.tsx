@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import img from '../../assets/images/signup.svg'
 
 const SignUpSuccess: React.FC = ()=>{
@@ -14,7 +15,7 @@ const SignUpSuccess: React.FC = ()=>{
                     seamless experience.
                 </p>
             </div>
-            <button>Connect Meter</button>
+            <button><Link to="/signin" className='link'>Connect Meter</Link> </button>
         </div>
     )
 }
