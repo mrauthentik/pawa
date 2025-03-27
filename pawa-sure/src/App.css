@@ -6,6 +6,7 @@
     --yellow: #FFC107;
     --blue: #1A1A2E;
     --bg-color: #FFFCF6;
+    --primary: #1E1E1E;
 }
 
 /* #########  Global styles ########### */
@@ -29,5 +30,27 @@
 /* #########  SignUp styles ########### */
 .signup-container{
     background-color: var(--bg-color);
+    padding-left: 1rem;
+}
+.signup-img{
+    padding: 2rem 0;
+    img{
+        width: 50%;
+    }
+}
+.signup-header-text{
+  font-size: 10px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
+}
+.signup-mini-text{
+    margin-bottom: 3rem;
+}
+.signup-form{
+    form{
+        display: flex;
+        flex-direction: column;
+    }
 }
 /* #########  SignUp styles end here ########### */

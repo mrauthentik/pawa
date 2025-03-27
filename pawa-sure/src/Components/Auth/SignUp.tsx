@@ -15,7 +15,7 @@ const SignUp: React.FC = ()=>{
                 with easy payments, smart tracking and <br />
                 real-time monitoring
                 </p>
-
+            </div>
                 <div className="signup-form">
                     <form action="#">
                         <label htmlFor="fullname">Full Name</label>
@@ -51,7 +51,7 @@ const SignUp: React.FC = ()=>{
                         <button type='submit'>Sign Up</button>
                         <p>Already a Member? <a href='/login'>Sign In</a></p>
                     </form>
-                </div>
+                
             </div>
         </div>
     )
