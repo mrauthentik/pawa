@@ -162,6 +162,12 @@ button:active{
        .forget{
         display: flex;
         justify-content: space-between;
+        .remeber-input{
+            display: flex;
+        }
+       }
+       .check{
+        margin-left:-2rem ;
        }
       
     }
