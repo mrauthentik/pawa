@@ -1,13 +1,22 @@
 import React from 'react'
 import { useNavigate  } from 'react-router-dom'
+
 import logo from '../../assets/images/home-icon.png'
 
 const SignUp: React.FC = ()=>{
+    const [password, setPassword] = React.useState('')
+    const [confirmPassword, setConfirmPassword] = React.useState('')
 
     const navigate = useNavigate()
     const handleSignUp = ()=>{
        
-        navigate('/signup-success')
+        if(password !== confirmPassword){
+            alert('Passwords do not match')
+            return
+        }else{
+           navigate('/signup-success') 
+        }
+        
         
         console.log('Sign Up')
     }
@@ -51,12 +60,16 @@ const SignUp: React.FC = ()=>{
                             type='password' 
                             placeholder='Enter your password' 
                             required
+                            value={password}
+                            onChange={(e)=>setPassword(e.target.value)}
                         />
                         <label htmlFor="confirmPassword">Confirm Password</label>
                         <input 
                             type="password" 
                             placeholder='Confirm your password' 
                             required
+                            value={confirmPassword}
+                            onChange={(e)=>setConfirmPassword(e.target.value)}
                         />
                         <button 
                         type='submit' 
