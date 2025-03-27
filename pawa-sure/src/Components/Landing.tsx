@@ -1,9 +1,16 @@
-import React from "react"
+import React, {useEffect} from "react"
+import { useNavigate } from "react-router-dom"
 import {motion} from "framer-motion"
 
 import img from '../assets/images/home-icon.png'
 
 const Landing: React.FC = () => {
+    const navigate = useNavigate()
+    useEffect(()=>{
+        const timer = setTimeout(()=>{navigate('/signup')}, 3000)
+        return()=>clearTimeout(timer)
+    }, [navigate])
+
 	return (
 		<div className="landing-container">
 			<motion.img 
