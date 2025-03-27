@@ -18,6 +18,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+button{
+    cursor: pointer;
+    background-color: var(--yellow);
+    border: none;
+    font-weight: 600;
+    padding: 1rem;
+    width: 95%;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
 
 /* #########  Landing page syles ########### */
 .landing-container{
