@@ -2,6 +2,10 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import img from '../../assets/images/pawa.svg'
 
+import Select, {selectClasses } from '@mui/joy/select'
+import Option from '@mui/joy/option'
+import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
+
 const Meter: React.FC = ()=>{
     const navigate = useNavigate()
     const handleSubmit = ()=>{
@@ -26,7 +30,7 @@ const Meter: React.FC = ()=>{
                 <input type="number" placeholder='Enter Your Meter Number' required/>
                
                 <label htmlFor="Location">Location</label>
-                <select name="location" id="" required>
+                <Select name="location" id="" required>
                 <option value="">Select a State</option>
                 <option value="abia">Abia</option>
                 <option value="adamawa">Adamawa</option>
@@ -65,9 +69,9 @@ const Meter: React.FC = ()=>{
                 <option value="yobe">Yobe</option>
                 <option value="zamfara">Zamfara</option>
                 <option value="fct">Federal Capital Territory (Abuja)</option>
-                </select>
+                </Select>
                 <label htmlFor="provider">Select Your Service Provider/estate</label>
-                <select name="provider" id="" required>
+                <Select name="provider" id="" required>
                     <option value="">Please Select Your provider/estate</option>
                     <option value="AEDC"> Abuja Electricity Distribution Company (AEDC)</option>
                     <option value="BEDC">Benin Electricity Distribution Company (BEDC)</option>
@@ -80,14 +84,27 @@ const Meter: React.FC = ()=>{
                     <option value="KEDCO">Kano Electricity Distribution Company (KEDCO)</option>
                     <option value="PHEDC">Port Harcourt Electricity Distribution Company (PHEDC)</option>
                     <option value="YEDC">Yola Electricity Distribution Company (YEDC)</option>
-                </select>
+                </Select>
 
                 <label htmlFor="meterType">Account/Meter Type</label>
-                <select name="meterType" id="" required >
-                    <option value="">Please Select Your Meter Type</option>
-                    <option value=""> Prepaid</option>
-                    <option value=""> Postpaid</option>
-                </select>
+                <Select name="meterType"
+                         required 
+                         placeholder='Please Select Your Meter Type'
+                         indicator={<KeyboardArrowDown/>}
+                         sx={{
+                            width:240,
+                            [`& .${selectClasses.indicator}`]:{
+                             transition: `0.2s`,
+                             [`& .${selectClasses.expanded}`]:{
+                                transform: `rotate(-180deg)`,
+                             },
+                            },
+                         }}
+                         >
+                    
+                    <Option value=""> Prepaid</Option>
+                    <Option value=""> Postpaid</Option>
+                </Select>
                 <button type='submit' onClick={handleSubmit}>Add Meter</button>
             </form>
         </div>
