@@ -1,7 +1,17 @@
 import React from 'react'
+import { useNavigate ,Link } from 'react-router-dom'
 import logo from '../../assets/images/home-icon.png'
 
 const SignUp: React.FC = ()=>{
+
+    const navigate = useNavigate()
+    const handleSignUp = ()=>{
+       
+        navigate('/signup-success')
+        
+        console.log('Sign Up')
+    }
+
     return(
         <div className='signup-container'>
             <div className="signup-img">
@@ -17,7 +27,7 @@ const SignUp: React.FC = ()=>{
                 </p>
             </div>
                 <div className="signup-form">
-                    <form action="#">
+                    <form action="#" onSubmit={()=>handleSignUp}>
                         <label htmlFor="fullname">Full Name</label>
                         <input 
                             type="text" 
@@ -48,7 +58,11 @@ const SignUp: React.FC = ()=>{
                             placeholder='Confirm your password' 
                             required
                         />
-                        <button type='submit' className='signup-btn'>Sign Up</button>
+                        <button 
+                        type='submit' 
+                        className='signup-btn' onClick={handleSignUp}>
+                            Sign Up
+                            </button>
                         <div className="already-a-member">
                         <p>Already a Member? <a href='/login'>Sign In</a></p>
                         </div>

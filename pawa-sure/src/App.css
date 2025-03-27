@@ -29,6 +29,9 @@ button{
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 }
+button:hover{
+    background-color: #FFA000;
+}
 
 /* #########  Landing page syles ########### */
 .landing-container{
@@ -110,3 +113,6 @@ button{
 
 
 /* #########  Sign up Success styles ########### */
+
+
+/* #########  Sign up Success styles ends here ########### */
