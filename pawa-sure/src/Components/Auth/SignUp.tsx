@@ -28,7 +28,7 @@ const SignUp: React.FC = ()=>{
             </div>
                 <div className="signup-form">
                     <form onSubmit={()=>handleSignUp}>
-                        <label htmlFor="fullname">Full Name</label>
+                        <label htmlFor="fullname">Username</label>
                         <input 
                             type="text" 
                             placeholder='Enter your full name'
