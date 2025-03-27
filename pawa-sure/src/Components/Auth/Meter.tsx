@@ -62,8 +62,17 @@ const Meter: React.FC = ()=>{
                 <label htmlFor="provider">Select Your Service Provider/estate</label>
                 <select name="provider" id="" required>
                     <option value="">Please Select Your provider/estate</option>
-                    <option value=""> AEDC</option>
-                    <option value=""> NEDC</option>
+                    <option value="AEDC"> Abuja Electricity Distribution Company (AEDC)</option>
+                    <option value="BEDC">Benin Electricity Distribution Company (BEDC)</option>
+                    <option value="EKEDC">Eko Electricity Distribution Company (EKEDC)</option>
+                    <option value="EEDC">Enugu Electricity Distribution Company (EEDC)</option>
+                    <option value="IBEDC">Ibadan Electricity Distribution Company (IBEDC)</option>
+                    <option value="IE">Ikeja Electric (IE)</option>
+                    <option value="JEDC">Jos Electricity Distribution Company (JEDC)</option>
+                    <option value="KEDC">Kaduna Electricity Distribution Company (KEDC)</option>
+                    <option value="KEDCO">Kano Electricity Distribution Company (KEDCO)</option>
+                    <option value="PHEDC">Port Harcourt Electricity Distribution Company (PHEDC)</option>
+                    <option value="YEDC">Yola Electricity Distribution Company (YEDC)</option>
                 </select>
 
                 <label htmlFor="meterType">Account/Meter Type</label>
