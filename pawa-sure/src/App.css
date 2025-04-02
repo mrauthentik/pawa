@@ -365,7 +365,7 @@ button:active{
 
 .text-box{
    margin-top: -33rem; 
-   padding: 1rem 1rem;
+   padding: 1.5rem 1rem;
    color: white;
    text-align: center;
    background-color: black !important;
@@ -375,6 +375,7 @@ button:active{
    border-top-right-radius: 30px;
     h2{
         font-size: 24px;
+        margin-bottom: 1rem;
     }
     p{
         font-size: 16px;
@@ -383,7 +384,7 @@ button:active{
 
 /* Custom Swiper Pagination */
 .swiper-pagination{
-    top: 34rem !important;
+    top: 37rem !important;
     bottom: auto;
   }
 .swiper-pagination-bullet {
