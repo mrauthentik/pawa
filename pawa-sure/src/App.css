@@ -363,12 +363,15 @@ button:active{
 /* ###########  404 styles ends here ##########*/
 
 
+.mySwiper{
+    height: 100vh;
+}
 .text-box{
    margin-top: -33rem; 
    padding: 1.5rem 1rem;
    color: white;
    text-align: center;
-   background-color: black !important;
+   background: linear-gradient( rgba(0, 0, 0, 1),rgba(0, 0, 0, 1))!important;
    z-index: 100;
    position:absolute;
    border-top-left-radius: 30px;
@@ -380,11 +383,14 @@ button:active{
     p{
         font-size: 16px;
     }
+    button{
+        margin-top: 4rem;
+    }
 }
 
 /* Custom Swiper Pagination */
 .swiper-pagination{
-    top: 37rem !important;
+    top: 37.5rem !important;
     bottom: auto;
   }
 .swiper-pagination-bullet {
