@@ -49,6 +49,7 @@ const OnboardingSlider = () => {
                     }else{
                         swiperRef.current?.slideNext()
                     }
+                   
                     console.log('button is clicked')
                 }}
            >

@@ -7,7 +7,7 @@ import img from '../assets/images/home-logo.svg'
 const Landing: React.FC = () => {
     const navigate = useNavigate()
     useEffect(()=>{
-        const timer = setTimeout(()=>{navigate('/signup')}, 3000)
+        const timer = setTimeout(()=>{navigate('/onBoarding')}, 3000)
         return()=>clearTimeout(timer)
     }, [navigate])
 
