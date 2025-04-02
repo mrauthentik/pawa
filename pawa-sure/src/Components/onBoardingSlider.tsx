@@ -36,7 +36,7 @@ const OnboardingSlider = () => {
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="flex flex-col items-center justify-center">
           <img src={slide.image} alt={slide.title} className="w-full h-60 object-cover" />
-          <div className="p-4 text-white text-center rounded-t-2xl text-box">
+          <div className="p-4 bg-black-500 text-white text-center rounded-t-2xl text-box">
             <h2 className="text-xl font-bold">{slide.title}</h2>
             <p className="text-sm mt-2">{slide.description}</p>
             <button className="mt-4 bg-yellow-500 text-black px-6 py-2 rounded-lg">{slide.buttonText}</button>
