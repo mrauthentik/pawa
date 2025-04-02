@@ -14,19 +14,19 @@ const slides = [
   {
     image: img1,
     title: "Power Up Your Control",
-    description: "Easily track, manage, and pay for your electricity in one place. Say goodbye to unexpected blackouts!",
+    description: "Easily track, manage, and pay for your electricity in one place. ",
     buttonText: "Next",
   },
   {
     image: img2,
     title: "Stay in Charge of Your Meter",
-    description: "Add and manage multiple prepaid meters, track consumption, and never lose power unexpectedly.",
+    description: "Add and manage multiple prepaid meters, track consumption.",
     buttonText: "Next",
   },
   {
     image: img3,
     title: "Fast & Secure Payments",
-    description: "Top up your meter, monitor expenses, and access your transaction history—all in a few taps.",
+    description: "Top up your meter, monitor expenses, and access your transaction history.",
     buttonText: "Get Started",
   },
 ];
