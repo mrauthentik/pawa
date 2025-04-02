@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Pagination,  } from "swiper/modules";
+
+import { Pagination } from "swiper/modules";
 import img1 from '../assets/images/slide1.png'
 import img2 from '../assets/images/slide4.png'
 import img3 from '../assets/images/slide3.png'
