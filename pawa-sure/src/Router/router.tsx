@@ -7,11 +7,16 @@ import MeterSuccess from '../Components/Auth/MeterSuccess'
 import SignIn from '../Components/Auth/SignIn'
 import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 import NotFound from '../Components/NotFound'
+import OnboardingSlider from '../Components/onBoardingSlider'
 
 const router = createBrowserRouter([
     {
         path:'/',
         element: <Landing />
+    },
+    {
+        path:'/onboarding',
+        element: <OnboardingSlider />
     },
     {
         path:'/signup',
