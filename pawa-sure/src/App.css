@@ -361,3 +361,25 @@ button:active{
     }
 }
 /* ###########  404 styles ends here ##########*/
+
+
+.text-box{
+   margin-top: -25rem; 
+   padding: 0 1rem;
+   color: white;
+   text-align: center;
+   
+}
+
+/* Custom Swiper Pagination */
+.swiper-pagination-bullet {
+    background-color: yellow !important; /* Change dot color */
+    width: 20px; /* Increase dot size */
+    height: 12px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: orange !important; /* Active dot color */
+    width:25px;
+  }
+  
