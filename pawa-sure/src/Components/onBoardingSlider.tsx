@@ -34,7 +34,12 @@ const OnboardingSlider = () => {
     const navigate = useNavigate()
     const swiperRef = useRef<SwiperClass | null>(null)
   return (
-    <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper">
+    <Swiper 
+            pagination={{ clickable: true }} 
+            modules={[Pagination]} 
+            onSwiper={(swiper)=> (swiperRef.current = swiper)}
+            className="mySwiper"
+        >
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="flex flex-col items-center justify-center relative">
           <img src={slide.image} alt={slide.title} className="w-full h-60 object-cover" />
