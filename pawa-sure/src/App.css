@@ -372,19 +372,20 @@ button:active{
 }
 
 /* Custom Swiper Pagination */
-.swiper-pagination-bullet {
-    background-color: white !important; /* Change dot color */
-    width: 20px; /* Increase dot size */
-    height: 15px;
-    
-  }
-  
-  .swiper-pagination{
+.swiper-pagination{
     top: 34rem !important;
     bottom: auto;
   }
+.swiper-pagination-bullet {
+    background-color: white !important; /* Change dot color */
+    width: 15px; 
+    height: 12px;
+    border-radius: 6px;
+  }
+  
   .swiper-pagination-bullet-active {
-    background-color: orange !important; /* Active dot color */
-    width:25px;
+    background-color: var(--yellow) !important; /* Active dot color */
+    width: 3rem; 
+    height: 12px;
   }
   
