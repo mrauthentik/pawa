@@ -389,6 +389,7 @@ button:active{
     }
     button{
         margin-top: 3rem;
+        pointer-events: auto;
     }
 }
 

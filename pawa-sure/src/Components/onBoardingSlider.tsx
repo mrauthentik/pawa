@@ -7,6 +7,7 @@ import img2 from '../assets/images/slide4.png'
 import img3 from '../assets/images/slide3.png'
 import SwiperClass from "swiper";
 
+
 const slides = [
   {
     image: img1,
@@ -35,12 +36,14 @@ const OnboardingSlider = () => {
       if(swiperRef.current){
        console.log('Swiper initialized', swiperRef.current)
       }
-    },[])
+    },[swiperRef])
   return (
     <Swiper 
             pagination={{ clickable: true }} 
             modules={[Pagination]} 
             onSwiper={(swiper)=> (swiperRef.current = swiper)}
+            allowTouchMove={false}
+            touchStartPreventDefault={false}
             className="mySwiper"
         >
       {slides.map((slide, index) => (
