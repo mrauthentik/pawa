@@ -369,7 +369,7 @@ button:active{
     height: 100vh;
 }
 .text-box{
-   margin-top: -33rem; 
+   margin-top: -34rem; 
    height: 388px;
    padding: 2rem 2rem;
    color: white;
@@ -394,7 +394,7 @@ button:active{
 
 /* Custom Swiper Pagination */
 .swiper-pagination{
-    top: 36.4rem !important;
+    top: 35.3rem !important;
     bottom: auto;
   }
 .swiper-pagination-bullet {
