@@ -411,3 +411,24 @@ button:active{
     height: 12px;
   }
   
+
+
+  /* Password Icons styling */
+  .password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 40px; /* Make space for the eye icon */
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: gray;
+}
