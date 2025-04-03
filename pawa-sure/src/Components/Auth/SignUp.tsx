@@ -59,7 +59,7 @@ const SignUp: React.FC = () => {
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         <span className="eye-icon" onClick={() => setShowPassword(!showPassword)}>
-                            {showPassword ? <VisibilityOff /> : <Visibility />}
+                            {showPassword ? <Visibility /> : <VisibilityOff />}
                         </span>
                     </div>
 
