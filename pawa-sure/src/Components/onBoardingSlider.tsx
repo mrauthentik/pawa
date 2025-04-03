@@ -1,4 +1,4 @@
-import {useRef}from "react";
+import {useEffect,useRef}from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
 import {Pagination } from "swiper/modules"
@@ -31,6 +31,11 @@ const slides = [
 const OnboardingSlider = () => {
     const navigate = useNavigate()
     const swiperRef = useRef<SwiperClass | null>(null)
+    useEffect(()=>{
+      if(swiperRef.current){
+       console.log('Swiper initialized', swiperRef.current)
+      }
+    },[])
   return (
     <Swiper 
             pagination={{ clickable: true }} 
@@ -50,7 +55,7 @@ const OnboardingSlider = () => {
                     if(index === slides.length - 1){
                         navigate('/signin'); 
                     }else{
-                        swiperRef.current?.slideNext()
+                        swiperRef.current.slideNext()
                     }
                    
                     console.log('button is clicked')
