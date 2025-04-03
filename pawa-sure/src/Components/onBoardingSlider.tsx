@@ -52,13 +52,18 @@ const OnboardingSlider = () => {
             <button 
                 className="mt-4 bg-yellow-500 text-black px-6 py-2 rounded-lg"
                 onClick={()=> {
+                  console.log('Button has been clicked')
                     if(index === slides.length - 1){
                         navigate('/signin'); 
                     }else{
-                        swiperRef.current.slideNext()
+                         if(swiperRef.current){
+                          swiperRef.current.slideNext()
+                         }else {
+                          console.log("Swiper instance not available")
+                         }
                     }
                    
-                    console.log('button is clicked')
+                  
                 }}
            >
                 {slide.buttonText}
