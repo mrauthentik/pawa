@@ -1,10 +1,11 @@
 import {useRef}from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
-import 'swiper/css'
-import 'swiper/css/pagination'
+import "swiper/css"
+import { Pagination } from 'swiper'
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination.min.css'
 
-import { Pagination } from "swiper/modules";
 import img1 from '../assets/images/slide1.png'
 import img2 from '../assets/images/slide4.png'
 import img3 from '../assets/images/slide3.png'
