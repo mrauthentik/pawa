@@ -1,6 +1,7 @@
  import React from 'react'
  import { useNavigate, Link } from 'react-router-dom'
  import img from '../../assets/images/pawa.svg'
+ 
 
  const SignIn: React.FC =  ()=>{
     const navigate = useNavigate()
@@ -21,6 +22,7 @@
                 <input type="email" placeholder='Enter Your Email' required/>
                 <label htmlFor="password">Password</label>
                 <input type="password" placeholder='Enter Your Password' required/>
+                
                  <div className="forget">
                     <div className="remeber-input">
                         <input type="checkbox"  className='check'/>
