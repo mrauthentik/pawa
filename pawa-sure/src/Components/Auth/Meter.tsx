@@ -2,8 +2,8 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import img from '../../assets/images/pawa.svg'
 
-import Select, {selectClasses } from '@mui/joy/select'
-import Option from '@mui/joy/option'
+import Select, {selectClasses } from '@mui/joy/Select'
+import Option from '@mui/joy/Option'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
 
 const Meter: React.FC = ()=>{
