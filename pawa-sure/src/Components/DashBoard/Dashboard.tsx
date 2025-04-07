@@ -12,8 +12,8 @@ const Dashboard:React.FC = () => {
             <img src={img} alt="" />
           </div>
           <div className="header-text">
-            <p>🌻 Good Morning,</p>
-            <h2>Charles</h2>
+            <h2>🌻 Good Morning,</h2>
+            <p>Charles</p>
             </div>
         </div>
          <div className="notification">

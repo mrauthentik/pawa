@@ -432,3 +432,21 @@ button:active{
     font-size: 1.5rem;
     color: gray;
 }
+
+
+/* Dashboard styling starts here */
+.dashboard-container{
+    padding: 1rem 1.5rem;
+    background-color: var(--bg-color);
+    .header{
+        display: flex;
+        justify-content: space-between;
+        .profile{
+            display: flex;
+           .header-text{
+            padding: 1px 5px;
+           }
+        }
+       
+    }
+}
