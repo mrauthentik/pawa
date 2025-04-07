@@ -20,6 +20,10 @@ const Dashboard:React.FC = () => {
             <NotificationsIcon className='notification-icon' />
          </div>
       </div>
+
+      <div className="b">
+      <img src={img1} alt="" />
+      </div>
     </div>
   )
 }
