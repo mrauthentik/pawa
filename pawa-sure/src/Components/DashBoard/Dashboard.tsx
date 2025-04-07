@@ -1,6 +1,7 @@
 import React from 'react'
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import img from '../../assets/images/avatar.svg'
+import img1 from '../../assets/images/blue-bg.png'
 
 const Dashboard:React.FC = () => {
   return (
