@@ -8,6 +8,7 @@ import SignIn from '../Components/Auth/SignIn'
 import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 import NotFound from '../Components/NotFound'
 import OnboardingSlider from '../Components/onBoardingSlider'
+import { Dashboard } from '@mui/icons-material'
 
 const router = createBrowserRouter([
     {
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
         path:'/invalid',
         element: <FailedMeterNumber />
     },
+    {
+        path:'/dashboard',
+        element: <Dashboard />
+    },
+
     {
         path:'*',
         element: <NotFound />
