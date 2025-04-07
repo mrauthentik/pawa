@@ -8,7 +8,8 @@ import SignIn from '../Components/Auth/SignIn'
 import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 import NotFound from '../Components/NotFound'
 import OnboardingSlider from '../Components/onBoardingSlider'
-import { Dashboard } from '@mui/icons-material'
+import Dashboard from '../Components/Dashboard/Dashboard'
+
 
 const router = createBrowserRouter([
     {
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
     },
     {
         path:'/dashboard',
-        element: <Dashboard />
+        element: <Dashboard />,
     },
 
     {
