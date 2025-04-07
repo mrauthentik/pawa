@@ -15,7 +15,7 @@ const NotFound:React.FC = ()=>{
                 Let's get you back on track
                 </p>
             </div>
-                <button onClick={()=> navigate('/')}>Go to Dashboard</button>   
+                <button onClick={()=> navigate('/dashboard')}>Go to Dashboard</button>   
         </div>
     )
 }
