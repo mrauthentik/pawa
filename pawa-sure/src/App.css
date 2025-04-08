@@ -526,9 +526,10 @@ button:active{
         }
     }
     .leveler{
-        margin: 1rem 1.5rem;
+        margin: 0 1.5rem;
         background-color: #E4E4E4;
         border-radius: 20px;
+        width: 90%;
         height: 25px;
         .range{
             background-color: #FFEB3B;
