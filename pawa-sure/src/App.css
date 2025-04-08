@@ -475,14 +475,22 @@ button:active{
         display: flex;
         justify-self: space-between;
         margin-top: 2rem;
+        width: 100%;
+        gap: 1rem;
         .card-1,.card-2{
-            border-radius: 10px;
+            border-radius: 20px;
+            width: 100%;
+            padding: 1.5rem ;
         }
         .card-1{
             background-color: #FFE8A2;
         }
         .card-2{
-            background-color: #6B6B98;
+            background-color: #DEDEFE;
+        }
+        .card-1:hover, .card-2:hover{
+            cursor: pointer;
+            scale: 1.05;
         }
     }
 }
