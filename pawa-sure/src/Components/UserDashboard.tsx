@@ -44,10 +44,12 @@ const toggleBalance = () => {
 
       <div className="dashboard-cards">
         <div className='card-1'>
-
+          <img src={img2} alt="" />
+          <p>Pay for Light</p>
         </div>
         <div className='card-2'>
-
+          <img src={img1} alt="" />
+          <p>A</p>
         </div>
       </div>
     </div>
