@@ -54,11 +54,19 @@ const toggleBalance = () => {
         </div>
       </div>
       <div className="meter-usage">
-        <img src={img3} alt="" />
-        <div className="text">
-          <p>Meter Usage</p>
-          <h2>Osaporo Estate and Housing</h2>
+        
+        <div className="block">
+          <img src={img3} alt="" />
+          <div className="text">
+            <p>Meter Usage</p>
+            <h2>Osaporo Estate and Housing</h2>
+          </div>
         </div>
+       
+       <div className="leveler">
+        <div className="range"></div>
+       </div>
+
       </div>
     </div>
   )
