@@ -21,6 +21,7 @@ const Dashboard:React.FC = () => {
       </div>
 
       <div className="money-field">
+        345,55$
       </div>
     </div>
   )

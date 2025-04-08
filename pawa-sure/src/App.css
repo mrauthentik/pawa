@@ -449,4 +449,9 @@ button:active{
         }
        
     }
+    .money-field{
+        background: url('./assets/images/blue-bg.png') no-repeat;
+        height: 18vh;
+        color: white;
+    }
 }
