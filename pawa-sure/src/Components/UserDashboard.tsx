@@ -39,6 +39,15 @@ const toggleBalance = () => {
         <h1>{showBalance ? '₦45,000' : '******'}</h1>
 
       </div>
+
+      <div className="dashboard-cards">
+        <div className='card-1'>
+        
+        </div>
+        <div className='card-2'>
+
+        </div>
+      </div>
     </div>
   )
 }
