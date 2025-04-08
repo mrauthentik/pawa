@@ -470,4 +470,11 @@ button:active{
             font-weight: 200;
         }
     }
+
+    .dashboard-cards{
+        display: flex;
+        justify-self: space-between;
+        margin-top: 2rem;
+        .
+    }
 }
