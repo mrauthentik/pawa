@@ -1,6 +1,7 @@
 import React from 'react'
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import img from '../../assets/images/avatar.svg'
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 const Dashboard:React.FC = () => {
   return (
@@ -21,7 +22,10 @@ const Dashboard:React.FC = () => {
       </div>
 
       <div className="money-field">
-        345,55$
+        <p>Wallet Balance</p>
+        <VisibilityOff className='eye-icon' />
+         <h1>******</h1>
+        
       </div>
     </div>
   )
