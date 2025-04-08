@@ -446,16 +446,16 @@ button:active{
         .profile{
             display: flex;
            .header-text{
-            padding: 1px 5px;
+            padding: 1px 7px;
             h2{
                 font-size: 20px;
                 font-weight: 700;
                 color: var(--primary);
             }
             p{
-                font-size: 16px;
-                font-weight: 400;
-                color: var(--small-text);
+                font-size: 20px;
+                font-weight: 600;
+                color: var(--primary);
             }
            }
         }
@@ -504,4 +504,6 @@ button:active{
             scale: 1.05;
         }
     }
+
+    
 }
