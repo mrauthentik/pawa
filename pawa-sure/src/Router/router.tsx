@@ -8,7 +8,7 @@ import SignIn from '../Components/Auth/SignIn'
 import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 import NotFound from '../Components/NotFound'
 import OnboardingSlider from '../Components/onBoardingSlider'
-import UserDashboard from '../Components/Dashboard/UserDashboard'
+import UserDashboard from '../Components/UserDashboard'
 
 
 
