@@ -2,6 +2,8 @@ import React from 'react'
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import img from '../assets/images/avatar.svg'
 import { Visibility, VisibilityOff } from '@mui/icons-material';
+import img1 from '../assets/images/plug.svg'
+import img2 from '../assets/images/thunder.svg'
 
 const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
@@ -42,7 +44,7 @@ const toggleBalance = () => {
 
       <div className="dashboard-cards">
         <div className='card-1'>
-        
+
         </div>
         <div className='card-2'>
 
