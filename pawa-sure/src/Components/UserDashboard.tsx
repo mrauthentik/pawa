@@ -4,6 +4,7 @@ import img from '../assets/images/avatar.svg'
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import img1 from '../assets/images/plug.svg'
 import img2 from '../assets/images/thunder.svg'
+import img3 from '../assets/images/meter-usage-icon.svg'
 
 const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
@@ -50,6 +51,13 @@ const toggleBalance = () => {
         <div className='card-2'>
           <img src={img1} alt="" />
           <p>Add new Meter</p>
+        </div>
+      </div>
+      <div className="meter-usage">
+        <img src={img3} alt="" />
+        <div className="text">
+          <p>Meter Usage</p>
+          <h2>Osaporo Estate and Housing</h2>
         </div>
       </div>
     </div>
