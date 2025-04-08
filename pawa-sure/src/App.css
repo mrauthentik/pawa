@@ -438,6 +438,7 @@ button:active{
 .dashboard-container{
     padding: 1rem 1rem;
     background-color: var(--bg-color);
+    padding-bottom: 80px;
     .header{
         margin-top: 1.5rem;
         display: flex;
@@ -545,5 +546,25 @@ button:active{
         color: var(--small-text);
         justify-content: space-between;
         padding: 10px 1rem;
+    }
+}
+
+/* Dashboard styling ends here */
+
+/* Bottom Nav styling starts here */
+.bottom-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-top: 1px solid var(--grey);
+    background-color: white;
+    .bottom-btn:hover{
+        background-color:transparent;
+        scale: 1.05;
+    }
+    .bottom-icon:active{
+        color:red;
     }
 }

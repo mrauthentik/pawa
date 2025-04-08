@@ -1,4 +1,5 @@
 import React from 'react'
+import BottomNav from './BottomNav';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import img from '../assets/images/avatar.svg'
 import { Visibility, VisibilityOff } from '@mui/icons-material';
@@ -71,6 +72,7 @@ const toggleBalance = () => {
           <p>300kWh</p>
         </div>
       </div>
+      <BottomNav />
     </div>
   )
 }
