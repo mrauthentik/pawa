@@ -49,7 +49,7 @@ const toggleBalance = () => {
         </div>
         <div className='card-2'>
           <img src={img1} alt="" />
-          <p>A</p>
+          <p>Add new Meter</p>
         </div>
       </div>
     </div>
