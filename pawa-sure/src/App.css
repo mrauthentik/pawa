@@ -457,9 +457,14 @@ button:active{
         color: white;
         padding: 20px;
         position: relative;
+        p{
+            font-weight: 200;
+        }
         .show-money-icon{
             position: absolute;
-            left: 4rem;
+            left: 10rem;
+            top: 1.3rem;
+            font-weight: 200;
         }
     }
 }
