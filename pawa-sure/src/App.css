@@ -436,7 +436,7 @@ button:active{
 
 /* Dashboard styling starts here */
 .dashboard-container{
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     background-color: var(--bg-color);
     .header{
         display: flex;
