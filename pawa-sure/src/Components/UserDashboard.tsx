@@ -22,7 +22,7 @@ const toggleBalance = () => {
           <div className="header-text">
             <h2>🌻 Good Morning,</h2>
             <p>Charles</p>
-            </div>
+          </div>
         </div>
          <div className="notification">
             <NotificationsIcon className='notification-icon' />
