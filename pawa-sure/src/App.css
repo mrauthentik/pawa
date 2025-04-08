@@ -507,6 +507,8 @@ button:active{
 
     .meter-usage{
         background-color: #e4e4e48f;
+        height: 25vh;
+        border-radius: 20px;
         .block{
             display: flex;
             margin-top: 3rem;
@@ -525,11 +527,16 @@ button:active{
     }
     .leveler{
         margin: 1rem 1.5rem;
-        background-color: blue;
+        background-color: #E4E4E4;
+        border-radius: 20px;
+        height: 25px;
         .range{
-            height: 1vh;
-            padding: 1rem;
-            background-color: var(--btn-hover);
+            background-color: #FFEB3B;
+            border-radius: 20px;
+            width: 50%;
+            p{
+                margin-left: 8rem;
+            }
         }
     }
 }

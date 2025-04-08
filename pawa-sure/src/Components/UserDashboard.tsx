@@ -64,7 +64,7 @@ const toggleBalance = () => {
         </div>
        
        <div className="leveler">
-        <div className="range"></div>
+        <div className="range"> <p>50%</p></div>
        </div>
 
       </div>
