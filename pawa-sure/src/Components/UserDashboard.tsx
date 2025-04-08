@@ -66,7 +66,10 @@ const toggleBalance = () => {
        <div className="leveler">
         <div className="range"> <p>50%</p></div>
        </div>
-
+        <div className="watt-text">
+          <p>0kWh</p>
+          <p>300kWh</p>
+        </div>
       </div>
     </div>
   )

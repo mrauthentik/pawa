@@ -507,7 +507,7 @@ button:active{
 
     .meter-usage{
         background-color: #e4e4e48f;
-        height: 25vh;
+        height: 24vh;
         border-radius: 20px;
         .block{
             display: flex;
@@ -539,5 +539,11 @@ button:active{
                 margin-left: 8rem;
             }
         }
+    }
+    .watt-text{
+        display: flex;
+        color: var(--small-text);
+        justify-content: space-between;
+        padding: 10px 1rem;
     }
 }
