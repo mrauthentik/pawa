@@ -8,8 +8,8 @@ import SignIn from '../Components/Auth/SignIn'
 import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 import NotFound from '../Components/NotFound'
 import OnboardingSlider from '../Components/onBoardingSlider'
-import Dashboard from '../Components/Dashboard/Dashboard'
-// import Dashboard from '../Components/Dashboard/Dashboard'
+import UserDashboard from '../Components/Dashboard/UserDashboard'
+
 
 
 const router = createBrowserRouter([
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
     },
     {
         path:'/dashboard',
-        element: <Dashboard />
+        element: <UserDashboard />
     },
     {
         path:'*',
