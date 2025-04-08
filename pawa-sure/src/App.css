@@ -482,6 +482,12 @@ button:active{
             font-weight: 200;
         }
     }
+    .cross{
+        position: absolute;
+        right: 0rem;
+        top: 10rem;
+
+    }
 
     .dashboard-cards{
         display: flex;

@@ -6,6 +6,7 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 import img1 from '../assets/images/plug.svg'
 import img2 from '../assets/images/thunder.svg'
 import img3 from '../assets/images/meter-usage-icon.svg'
+import img4 from '../assets/images/cross.svg'
 
 const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
@@ -42,6 +43,9 @@ const toggleBalance = () => {
 
         <h1>{showBalance ? '₦45,000' : '******'}</h1>
 
+      </div>
+      <div className="cross">
+        <img src={img4} alt="" />
       </div>
 
       <div className="dashboard-cards">
