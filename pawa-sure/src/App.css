@@ -514,7 +514,7 @@ button:active{
 
     .meter-usage{
         background-color: #e4e4e48f;
-        height: 24vh;
+        height: 23.5vh;
         border-radius: 20px;
         .block{
             display: flex;
