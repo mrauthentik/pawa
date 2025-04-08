@@ -31,9 +31,9 @@ const toggleBalance = () => {
         <p>Wallet Balance</p>
         
         {showBalance ? (
-          <Visibility className='eye-icon' onClick={toggleBalance} style={{cursor:"pointer"}} />
+          <Visibility className='show-money-icon' onClick={toggleBalance} style={{cursor:"pointer"}} />
         ):(
-          <VisibilityOff className='eye-icon' onClick={toggleBalance} style={{cursor:'pointer'}} />
+          <VisibilityOff className='show-money-icon' onClick={toggleBalance} style={{cursor:'pointer'}} />
         )}
 
         <h1>{showBalance ? '₦45,000' : '******'}</h1>

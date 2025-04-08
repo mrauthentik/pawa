@@ -439,6 +439,7 @@ button:active{
     padding: 1rem 1rem;
     background-color: var(--bg-color);
     .header{
+        margin-top: 1.5rem;
         display: flex;
         justify-content: space-between;
         .profile{
@@ -452,6 +453,13 @@ button:active{
     .money-field{
         background: url('./assets/images/blue-bg.png') no-repeat;
         height: 18vh;
+        margin-top: 1.5rem;
         color: white;
+        padding: 20px;
+        position: relative;
+        .show-money-icon{
+            position: absolute;
+            left: 4rem;
+        }
     }
 }
