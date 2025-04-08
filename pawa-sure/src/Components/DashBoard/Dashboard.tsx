@@ -4,6 +4,12 @@ import img from '../../assets/images/avatar.svg'
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 const Dashboard:React.FC = () => {
+const [showBalance, setShowBalance] = React.useState(false)
+
+const toggleBalance = () => {
+  setShowBalance(prev => !prev)
+}
+
   return (
     <div className='dashboard-container'>
       <div className="header">
@@ -23,9 +29,15 @@ const Dashboard:React.FC = () => {
 
       <div className="money-field">
         <p>Wallet Balance</p>
-        <VisibilityOff className='eye-icon' />
-         <h1>******</h1>
         
+        {showBalance ? (
+          <Visibility className='eye-icon' onClick={toggleBalance} style={{cursor:"pointer"}} />
+        ):(
+          <VisibilityOff className='eye-icon' onClick={toggleBalance} style={{cursor:'pointer'}} />
+        )}
+
+        <h1>{showBalance ? '₦45,000' : '******'}</h1>
+
       </div>
     </div>
   )
