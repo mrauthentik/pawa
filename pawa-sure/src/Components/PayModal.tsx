@@ -27,8 +27,9 @@ const PayModal: React.FC<Props> = ({onClose}) => {
   }
 
   const handleClickOutside = (e: MouseEvent) =>{
-      if(modalRef.current && !modalRef.current.contains(e.target as Node))}
-      onClose()
+      if(modalRef.current && !modalRef.current.contains(e.target as Node)){
+        onClose()
+      }
   }
 
   return (
