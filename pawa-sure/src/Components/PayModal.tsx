@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import Payment from './Payment';
+
+interface Props {
+  onClose: ()=>
+}
 
 const PayModal: React.FC = () => {
   const [amount, setAmount] = useState('');
+  const [showPayment, setShowPayment] = useState(false)
 
   const formatAmount = (value:string) => {
     const numericValue = value.replace(/,/g, '').replace(/\D/g, '')
@@ -14,8 +20,13 @@ const PayModal: React.FC = () => {
     setAmount(formatAmount(input))
   }
 
+  const toggleFullPaymentModal = ()=>{
+    setShowPayment(prev => !prev)
+  }
+
   return (
     <div className='payModal-container'>
+     {showPayment && <Payment />}
       <h1>Top Up Wallet</h1>
 
       <form>
@@ -30,7 +41,7 @@ const PayModal: React.FC = () => {
             placeholder="0.00"
           />
         </div>
-        <button type="submit">Continue</button>
+        <button onClick={toggleFullPaymentModal}>Continue</button>
       </form>
     </div>
   );

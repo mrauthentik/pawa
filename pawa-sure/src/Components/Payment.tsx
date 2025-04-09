@@ -4,13 +4,19 @@ import card from '../assets/images/atm.svg'
 import gtb from '../assets/images/gtb.svg'
 import { Cancel } from '@mui/icons-material'
 
-const Payment:React.FC = () =>{
+
+interface Props {
+    onClose: () => void;
+    amount:string
+}
+
+const Payment:React.FC<Props> = ({onClose, amount}) =>{
     return (
         <div className='payment-page'>
-            <Cancel />
+            <Cancel className='cancel-icon' onClick={onClose} />
             <h1>Payment</h1>
             <div className="amount">
-                <h2>₦45,000.00</h2>
+                <h2>₦{amount}</h2>
             </div>
             <hr />
 
@@ -43,7 +49,7 @@ const Payment:React.FC = () =>{
                 </div>
             </div>
             
-            <button> Pay ₦10,000 </button>
+            <button> Pay ₦{amount} </button>
         </div>
     )
 }
