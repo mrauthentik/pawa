@@ -632,4 +632,7 @@ button:active{
             }
         }
     }
+    .display-card:hover{
+        scale: 1.06;
+    }
 }
