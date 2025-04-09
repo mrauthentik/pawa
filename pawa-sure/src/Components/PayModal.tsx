@@ -2,7 +2,7 @@ import React from 'react'
 
  const PayModal: React.FC = () => {
     return (
-        <div>
+        <div className='payModal-container'>
             <h1>Payment Modal</h1>
         </div>
     ) 

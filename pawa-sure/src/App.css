@@ -636,3 +636,27 @@ button:active{
     }
 }
 
+/* Styling for Pay Modal starts here */
+.payModal-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30vh;
+    background-color: var(--bg-color);
+    box-shadow:0 -4px 20px rgba(0,0,0,0.1) ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    z-index: 1000;
+    animation: slideUp 0.3s ease-in-out;
+}
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  
