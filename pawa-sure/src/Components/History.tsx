@@ -16,6 +16,10 @@ const TransactionHistory:React.FC = () => {
                         <p>3:31pm</p>
                     </div>
                 </div>
+                <div className="amount">
+                    <h2>-₦5000</h2>
+                    <p>send</p>
+                </div>
             </div>
         </div>
     )
