@@ -580,5 +580,15 @@ button:active{
 
 /* ###########  Transaction History styles starts here ##########*/
 .transaction-history{
-    
+    margin-top: 2rem;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        h2{
+
+        }
+        p{
+            
+        }
+    }
 }
