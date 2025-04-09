@@ -16,21 +16,67 @@ const BottomNav: React.FC = () => {
         onChange={(_, newValue) => setValue(newValue)}
         sx={{
             backgroundColor: "#fff",
-            borderTop:'1px solid #e0e0e0',
+           
           }}
     
       >
         <BottomNavigationAction label="Home" icon={<HomeIcon className='bottom-icon' />}
         sx={{
-            color: value === 0 ? '#dddd' : "#000",
+            color: value === 0 ? '#dddd' : "#474747",
             '&.Mui-selected': {
               color: '#FFC107',
             },
+            '&.MuiBottomNavigationAction-label': {
+              fontSize: '52px',
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: value === 0 ? '600' : '400',
+              
+            },
         }}
         />
-        <BottomNavigationAction label="Analytics" icon={<AnalyticsIcon  className='bottom-icon'/>} />
-        <BottomNavigationAction label="Transactions" icon={<ReceiptLongIcon className='bottom-icon'/>} />
-        <BottomNavigationAction label="Settings" icon={<SettingsIcon className='bottom-icon'/>} />
+        <BottomNavigationAction label="Analytics" icon={<AnalyticsIcon  className='bottom-icon'/>}
+          sx={{
+            color: value === 0 ? '#dddd' : "#474747",
+            '&.Mui-selected': {
+              color: '#FFC107',
+            },
+            '&.MuiBottomNavigationAction-label': {
+              fontSize: '52px',
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: value === 0 ? '600' : '400',
+              
+            },
+        }}
+        />
+        <BottomNavigationAction label="Transactions" icon={<ReceiptLongIcon className='bottom-icon'/>}
+         sx={{
+            color: value === 0 ? '#dddd' : "#474747",
+            '&.Mui-selected': {
+              color: '#FFC107',
+            },
+            '&.MuiBottomNavigationAction-label': {
+              fontSize: '52px',
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: value === 0 ? '600' : '400',
+              
+            },
+        }}
+        />
+        <BottomNavigationAction label="Settings" icon={<SettingsIcon className='bottom-icon'/>} 
+         sx={{
+            color: value === 0 ? '#474747' : "#474747",
+            
+            '&.Mui-selected': {
+              color: '#FFC107',
+            },
+            '&.MuiBottomNavigationAction-label': {
+              fontSize: '52px',
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: value === 0 ? '600' : '400',
+              
+            },
+        }}
+        />
       </BottomNavigation>
     </div>
   );
