@@ -492,7 +492,6 @@ button:active{
     .dashboard-cards{
         display: flex;
         justify-self: space-between;
-        margin-top: 2rem;
         width: 100%;
         gap: 1rem;
         .card-1,.card-2{
@@ -596,5 +595,25 @@ button:active{
     .display-card{
         display: flex;
         justify-content: space-between;
+        .details{
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            img{
+                width: 25%;
+            }
+            .text{
+                margin-top: 26px;
+                
+            }
+            h2{
+                font-size: 15px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 15px;
+                color: var(--small-text);
+            }
+        }
     }
 }

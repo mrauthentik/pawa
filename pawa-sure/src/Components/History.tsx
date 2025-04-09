@@ -12,7 +12,7 @@ const TransactionHistory:React.FC = () => {
                 <div className="details">
                     <img src={img} alt="" />
                     <div className="text">
-                        <h2>Charles</h2>
+                        <h2>Shang-Li</h2>
                         <p>3:31pm</p>
                     </div>
                 </div>
