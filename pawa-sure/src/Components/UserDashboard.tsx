@@ -42,7 +42,7 @@ const toggleBalance = () => {
           <VisibilityOff className='show-money-icon' onClick={toggleBalance} style={{cursor:'pointer'}} />
         )}
 
-        <h1>{showBalance ? '₦45,000' : '******'}</h1>
+        <h1>{showBalance ? '₦45,000.00' : '*****'}</h1>
 
       </div>
       <div className="cross">
