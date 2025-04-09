@@ -741,12 +741,21 @@ button:active{
      }
 
      .payment-options{
-        .card{
+        margin-bottom: 3rem;
+        .card,.bank-transfer{
             display: flex;
             justify-content: space-between;
-            border: 1px solid var(--btn-hover);
+            border: 1px solid var(--small-text);
             padding: 10px;
             border-radius: 10px;
+            cursor: pointer;
+            .block{
+                display: flex;
+                gap: 2px;
+            }
+        }
+        .card:active, .bank-transfer:active{
+            border: solid 1px var(--btn-active);
         }
      }
   }
