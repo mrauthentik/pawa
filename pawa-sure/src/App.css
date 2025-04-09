@@ -586,10 +586,14 @@ button:active{
         justify-content: space-between;
         margin-bottom: 1rem;
         h2{
-            font-size: 20px;
+            font-size: 16px;
         }
         p{
-
+            font-size: 16px;
+            font-weight: 500;
         }
+    }
+    .display-card{
+        display: flex;
     }
 }
