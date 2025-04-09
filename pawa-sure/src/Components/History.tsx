@@ -1,4 +1,5 @@
 import React from 'react'
+import img from '../assets/images/avatar.svg'
 
 const TransactionHistory:React.FC = () => {
     return(
@@ -6,6 +7,15 @@ const TransactionHistory:React.FC = () => {
             <div className="header">
                 <h2>Transaction History</h2>
                 <p>View more </p>
+            </div>
+            <div className="display-card">
+                <div className="details">
+                    <img src={img} alt="" />
+                    <div className="text">
+                        <h2>Charles</h2>
+                        <p>3:31pm</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
