@@ -565,12 +565,11 @@ button:active{
     z-index: 1000;
     border-top: 1px solid var(--grey);
     background-color: white;
+    font-family: 'poppins';
+    font-size: 10px;
     .bottom-btn:hover{
         background-color:transparent;
         scale: 1.05;
-    }
-    .bottom-icon:active{
-        color:red;
     }
 }
 

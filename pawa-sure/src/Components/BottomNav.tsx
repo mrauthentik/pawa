@@ -15,6 +15,7 @@ const BottomNav: React.FC = () => {
         value={value}
         onChange={(_, newValue) => {
           setValue(newValue);
+          
         }}
     
       >
