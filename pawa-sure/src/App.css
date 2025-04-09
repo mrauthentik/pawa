@@ -644,7 +644,7 @@ button:active{
     right: 0;
     height: 38vh;
     background-color: var(--bg-color);
-    box-shadow:0 -4px 20px rgba(0,0,0,0.1) ;
+    box-shadow:0 -4px 20px rgba(0,0,0,0.3) ;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px;
@@ -678,6 +678,19 @@ button:active{
         }
 
     }
+       .currency {
+        font-size: 20px;
+        margin-right: 4px;
+        font-weight: 600;
+      }
+      .amount-input{
+        display: flex;
+        span{
+            margin-top: 20px;
+        }
+      }
+      
+      
 }
 @keyframes slideUp {
     from {

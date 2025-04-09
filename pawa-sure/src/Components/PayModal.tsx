@@ -1,18 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react';
 
- const PayModal: React.FC = () => {
-    return (
-        <div className='payModal-container'>
-            <h1>Top Up Wallet</h1>
+const PayModal: React.FC = () => {
+  const [amount, setAmount] = useState('');
 
-            <form >
-                <label>How Much?</label>
-                <input type="number" value='₦'/>
-                <button>Continue</button>
-            </form>
+  return (
+    <div className='payModal-container'>
+      <h1>Top Up Wallet</h1>
+
+      <form>
+        <label>How Much?</label>
+        <div className="amount-input">
+          <span className="currency">₦</span>
+          <input
+            type="number"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            placeholder="0.00"
+          />
         </div>
-    ) 
-        
-}
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  );
+};
 
-export default PayModal
+export default PayModal;
