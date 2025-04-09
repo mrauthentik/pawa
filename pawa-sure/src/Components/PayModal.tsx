@@ -3,7 +3,13 @@ import React from 'react'
  const PayModal: React.FC = () => {
     return (
         <div className='payModal-container'>
-            <h1>Payment Modal</h1>
+            <h1>Top Up Wallet</h1>
+
+            <form >
+                <label>How Much?</label>
+                <input type="number" />
+                <button>Continue</button>
+            </form>
         </div>
     ) 
         
