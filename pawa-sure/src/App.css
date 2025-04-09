@@ -464,8 +464,9 @@ button:active{
        
     }
     .money-field{
-        background: url('./assets/images/blue-bg.png') no-repeat;
+        background: url('./assets/images/blue-bg-2.svg') no-repeat;
         height: 18vh;
+        background-size: 90%;
         margin-top: 1.5rem;
         color: white;
         padding: 20px;
@@ -485,8 +486,8 @@ button:active{
     }
     .cross{
         position: absolute;
-        right: 0.8rem;
-        top: 11rem;
+        right: 2.7rem;
+        top: 10.3rem;
 
     }
 
