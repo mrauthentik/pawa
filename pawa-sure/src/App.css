@@ -716,4 +716,37 @@ button:active{
 
   /* Payment page styling starts here */
 
-  
+  .payment-page{
+     h1{
+        text-align: center;
+        font-weight: 600; 
+     }
+     p{
+        color: var(--small-text);
+        font-size: 15px;
+     }
+     .bank{
+        display: flex;
+        padding: 10px;
+        border: 1px solid var(--small-text);
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        .text{
+            display: grid;
+            h3{
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }  
+     }
+
+     .payment-options{
+        .card{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid var(--btn-hover);
+            padding: 10px;
+            border-radius: 10px;
+        }
+     }
+  }
