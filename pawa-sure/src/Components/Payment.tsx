@@ -1,4 +1,7 @@
 import React from 'react'
+import bank from '../assets/images/bank.svg'
+import card from '../assets/images/atm.svg'    
+import gtb from '../assets/images/gtb.svg'
 
 const Payment:React.FC = () =>{
     return (
