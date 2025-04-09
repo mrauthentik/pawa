@@ -488,6 +488,7 @@ button:active{
         position: absolute;
         right: 2.7rem;
         top: 10.4rem;
+        cursor: pointer;
 
     }
 
