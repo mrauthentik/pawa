@@ -13,13 +13,21 @@ const BottomNav: React.FC = () => {
       <BottomNavigation
         showLabels
         value={value}
-        onChange={(_, newValue) => {
-          setValue(newValue);
-          
-        }}
+        onChange={(_, newValue) => setValue(newValue)}
+        sx={{
+            backgroundColor: "#fff",
+            borderTop:'1px solid #e0e0e0',
+          }}
     
       >
-        <BottomNavigationAction className='bottom-btn' label="Home" icon={<HomeIcon className='bottom-icon' />} />
+        <BottomNavigationAction label="Home" icon={<HomeIcon className='bottom-icon' />}
+        sx={{
+            color: value === 0 ? '#dddd' : "#000",
+            '&.Mui-selected': {
+              color: '#FFC107',
+            },
+        }}
+        />
         <BottomNavigationAction label="Analytics" icon={<AnalyticsIcon  className='bottom-icon'/>} />
         <BottomNavigationAction label="Transactions" icon={<ReceiptLongIcon className='bottom-icon'/>} />
         <BottomNavigationAction label="Settings" icon={<SettingsIcon className='bottom-icon'/>} />
