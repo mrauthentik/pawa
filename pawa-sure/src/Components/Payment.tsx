@@ -15,7 +15,11 @@ const Payment:React.FC = () =>{
             <p>Your saved cards</p>
 
             <div className="bank">
-
+                <img src={gtb} alt="" />
+                <div className="text">
+                    <h3>Guaranty Trust Bank</h3>
+                    <p>Michael Stones Junior</p>
+                </div>
             </div>
 
             <p>other payment methods</p>
@@ -23,14 +27,14 @@ const Payment:React.FC = () =>{
             <div className="payment-options">
                 <div className="card">
                     <div className="block">    
-                    <img src="" alt="" />
+                    <img src={card} alt="" />
                     <p>Pay with card</p>
                     </div>
                     <input type="radio" name='card' />
                 </div>
                 <div className="bank-transfer">
                     <div className="block">
-                        <img src="" alt="" />
+                        <img src={bank} alt="" />
                         <p>Bank Transfer</p> 
                     </div>
                     <input type="radio" name='card' />
