@@ -568,10 +568,6 @@ button:active{
     font-family: 'poppins';
     font-size: 10px;
     margin-left: -2.5rem;
-    .bottom-btn:hover{
-        background-color:transparent;
-        scale: 1.05;
-    }
 }
 
 
