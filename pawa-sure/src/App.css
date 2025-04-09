@@ -615,5 +615,8 @@ button:active{
                 color: var(--small-text);
             }
         }
+        .amount{
+            font-size: 10px;
+        }
     }
 }
