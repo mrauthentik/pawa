@@ -26,6 +26,12 @@ const BottomNav: React.FC = () => {
             '&.Mui-selected': {
               color: '#FFC107',
             },
+            '& .MuiSvgIcon-root':{
+                fontSize: '1.9rem'
+            },
+            '&:hover':{
+                backgroundColor: 'transparent',
+            },
             '&.MuiBottomNavigationAction-label': {
               fontSize: '52px',
               fontFamily: 'Poppins, sans-serif',
@@ -39,6 +45,12 @@ const BottomNav: React.FC = () => {
             color: value === 0 ? '#dddd' : "#474747",
             '&.Mui-selected': {
               color: '#FFC107',
+            },
+            '& .MuiSvgIcon-root':{
+                fontSize: '1.9rem'
+            },
+            '&:hover':{
+                backgroundColor: 'transparent',
             },
             '&.MuiBottomNavigationAction-label': {
               fontSize: '52px',
@@ -54,6 +66,12 @@ const BottomNav: React.FC = () => {
             '&.Mui-selected': {
               color: '#FFC107',
             },
+            '& .MuiSvgIcon-root':{
+                fontSize: '1.9rem'
+            },
+            '&:hover':{
+                backgroundColor: 'transparent',
+            },
             '&.MuiBottomNavigationAction-label': {
               fontSize: '52px',
               fontFamily: 'Poppins, sans-serif',
@@ -68,6 +86,12 @@ const BottomNav: React.FC = () => {
             
             '&.Mui-selected': {
               color: '#FFC107',
+            },
+            '&:hover':{
+                backgroundColor: 'transparent',
+            },
+            '& .MuiSvgIcon-root':{
+                fontSize: '1.9rem'
             },
             '&.MuiBottomNavigationAction-label': {
               fontSize: '52px',
