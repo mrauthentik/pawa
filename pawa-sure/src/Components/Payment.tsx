@@ -2,10 +2,12 @@ import React from 'react'
 import bank from '../assets/images/bank.svg'
 import card from '../assets/images/atm.svg'    
 import gtb from '../assets/images/gtb.svg'
+import { Cancel } from '@mui/icons-material'
 
 const Payment:React.FC = () =>{
     return (
         <div className='payment-page'>
+            <Cancel />
             <h1>Payment</h1>
             <div className="amount">
                 <h2>₦45,000.00</h2>
