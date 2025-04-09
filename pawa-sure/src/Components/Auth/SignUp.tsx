@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import logo from '../../assets/images/pawa.svg';
 
@@ -84,7 +84,7 @@ const SignUp: React.FC = () => {
 
                     <div className="already-a-member">
                         <p>
-                            Already a Member? <a href="/signin">Sign In</a>
+                            Already a Member? <Link to='/signin'> Sign In</Link>
                         </p>
                     </div>
                 </form>
