@@ -465,11 +465,11 @@ button:active{
     }
     .money-field{
         background: url('./assets/images/blue-bg-2.svg') no-repeat;
-        height: 18vh;
+        height: 17vh;
         background-size: 90%;
         margin-top: 1.5rem;
         color: white;
-        padding: 20px;
+        padding: 19px 20px;
         position: relative;
         p{
             font-weight: 200;
