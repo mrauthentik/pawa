@@ -642,7 +642,7 @@ button:active{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30vh;
+    height: 38vh;
     background-color: var(--bg-color);
     box-shadow:0 -4px 20px rgba(0,0,0,0.1) ;
     border-top-left-radius: 20px;
@@ -650,6 +650,34 @@ button:active{
     padding: 20px;
     z-index: 1000;
     animation: slideUp 0.3s ease-in-out;
+    h1{
+        text-align: center;
+        font-size: 24px;
+        padding-top: 1rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        label{
+            color: var(--small-text);
+        }
+        input{
+            border:1px solid var(--btn-active);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            caret-color:var(--btn-active) ;
+            margin: 1rem 0;
+            height: 3rem;
+            font-size: 40px;
+            font-weight: 600;
+            content: '₦';
+            outline: none;
+
+        }
+
+    }
 }
 @keyframes slideUp {
     from {

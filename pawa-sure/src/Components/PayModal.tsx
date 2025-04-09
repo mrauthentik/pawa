@@ -7,7 +7,7 @@ import React from 'react'
 
             <form >
                 <label>How Much?</label>
-                <input type="number" />
+                <input type="number" value='₦'/>
                 <button>Continue</button>
             </form>
         </div>
