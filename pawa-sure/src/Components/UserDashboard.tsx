@@ -11,6 +11,12 @@ import TransactionHistory from './History';
 
 const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
+const getGreeting = () => {
+  const hour = new Date().getHours();
+  if (hour < 12) return '🌻 Good Morning';
+  if (hour < 17) return '🌤️ Good Afternoon';
+  return '🌙 Good Evening';
+};
 
 const toggleBalance = () => {
   setShowBalance(prev => !prev)
@@ -24,7 +30,7 @@ const toggleBalance = () => {
             <img src={img} alt="" />
           </div>
           <div className="header-text">
-            <h2>🌻 Good Morning,</h2>
+            <h2>{getGreeting()},</h2>
             <p>Charles</p>
           </div>
         </div>
