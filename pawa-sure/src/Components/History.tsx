@@ -17,7 +17,7 @@ const TransactionHistory:React.FC = () => {
                     </div>
                 </div>
                 <div className="amount">
-                    <h2>-₦5000</h2>
+                    <h2> ₦5000</h2>
                     <p>send</p>
                 </div>
             </div>
