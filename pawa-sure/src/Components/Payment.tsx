@@ -14,7 +14,7 @@ const Payment:React.FC<Props> = ({onClose, amount}) =>{
     return (
         <div className='payment-page'>
             <Cancel className='cancel-icon' onClick={onClose} />
-            <h1>Payment</h1>
+            <h1>Payment Method</h1>
             <div className="amount">
                 <h2>₦{amount}</h2>
             </div>

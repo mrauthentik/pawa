@@ -738,13 +738,16 @@ button:active{
         color: var(--small-text);
         font-size: 15px;
      }
+     hr{
+        margin-bottom: 1rem;
+     }
      .bank{
         display: flex;
         padding: 15px 10px;
         box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        margin-bottom: 1rem;
-        gap: 1rem;
+        margin: 1rem 0;
+        gap: 0.5rem;
         .text{
             display: grid;
             h3{
@@ -756,18 +759,18 @@ button:active{
 
      .payment-options{
         margin-bottom: 3rem;
-       
+       margin-top: 1rem;
         .card,.bank-transfer{
             display: flex;
             justify-content: space-between;
             box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-            padding: 10px;
+            padding: 15px 10px;
             border-radius: 10px;
             cursor: pointer;
             margin-bottom: 1rem;
             .block{
                 display: flex;
-                gap: 2px;
+                gap: 0.5rem;
                 input:checked{
                     background-color: var(--btn-active);
                 }
