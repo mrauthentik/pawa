@@ -91,7 +91,7 @@ const togglePayModal = () =>{
       </div>
       <TransactionHistory />
       <BottomNav />
-      {showPayModal && <PayModal />}
+      {showPayModal && <PayModal onClose={()=> setShowPayModal(false)} />}
     </div>
   )
 }

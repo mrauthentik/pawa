@@ -38,25 +38,33 @@ const PayModal: React.FC<Props> = ({onClose}) => {
   },[])
 
   return (
-    <div className='payModal-container'>
-     {showPayment && <Payment />}
-      <h1>Top Up Wallet</h1>
+    <>
+    {
+      showPayment ? (
+        <Payment onClose={()=> setShowPayment(false)} amount={amount} />
+      ) : (
+    
+      <div className='payModal-container'>
+        <h1>Top Up Wallet</h1>
 
-      <form>
-        <label>How Much?</label>
-        <div className="amount-input">
-          <span className="currency">₦</span>
-          <input
-            type="text"
-            inputMode='numeric'
-            value={amount}
-            onChange={handelChange}
-            placeholder="0.00"
-          />
-        </div>
-        <button onClick={toggleFullPaymentModal}>Continue</button>
-      </form>
-    </div>
+        <form>
+          <label>How Much?</label>
+          <div className="amount-input">
+            <span className="currency">₦</span>
+            <input
+              type="text"
+              inputMode='numeric'
+              value={amount}
+              onChange={handelChange}
+              placeholder="0.00"
+            />
+          </div>
+          <button onClick={toggleFullPaymentModal}>Continue</button>
+        </form>
+      </div>
+    )
+  }
+    </>
   );
 };
 
