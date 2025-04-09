@@ -8,9 +8,12 @@ import img2 from '../assets/images/thunder.svg'
 import img3 from '../assets/images/meter-usage-icon.svg'
 import img4 from '../assets/images/cross.svg'
 import TransactionHistory from './History';
+import PayModal from './PayModal';
 
 const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
+const [showPayModal, setShowPayModal] = React.useState(false)
+
 const getGreeting = () => {
   const hour = new Date().getHours();
   if (hour < 12) return '🌻 Good Morning';
@@ -20,6 +23,9 @@ const getGreeting = () => {
 
 const toggleBalance = () => {
   setShowBalance(prev => !prev)
+}
+const togglePayModal = () =>{
+  setShowPayModal(prev => !prev)
 }
 
   return (
@@ -52,7 +58,7 @@ const toggleBalance = () => {
 
       </div>
       <div className="cross">
-        <img src={img4} alt="" />
+        <img src={img4} alt=""  onClick={togglePayModal}/>
       </div>
 
       <div className="dashboard-cards">
