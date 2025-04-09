@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Payment from './Payment';
 
 interface Props {
-  onClose: ()=>
+  onClose: ()=> void;
 }
 
-const PayModal: React.FC = () => {
+const PayModal: React.FC<Props> = ({onClose}) => {
   const [amount, setAmount] = useState('');
   const [showPayment, setShowPayment] = useState(false)
+  const modalRef = useRef<HTMLDivElement>(null)
 
   const formatAmount = (value:string) => {
     const numericValue = value.replace(/,/g, '').replace(/\D/g, '')
@@ -20,8 +21,14 @@ const PayModal: React.FC = () => {
     setAmount(formatAmount(input))
   }
 
-  const toggleFullPaymentModal = ()=>{
-    setShowPayment(prev => !prev)
+  const toggleFullPaymentModal = (e: React.FormEvent)=>{
+    e.preventDefault()
+    setShowPayment(true)
+  }
+
+  const handleClickOutside = (e: MouseEvent) =>{
+      if(modalRef.current && !modalRef.current.contains(e.target as Node))}
+      onClose()
   }
 
   return (
