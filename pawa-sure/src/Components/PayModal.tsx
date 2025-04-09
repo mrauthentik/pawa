@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef,useEffect } from 'react';
 import Payment from './Payment';
 
 interface Props {
@@ -31,6 +31,11 @@ const PayModal: React.FC<Props> = ({onClose}) => {
         onClose()
       }
   }
+
+  useEffect(()=>{
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  },[])
 
   return (
     <div className='payModal-container'>
