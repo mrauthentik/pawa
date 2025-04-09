@@ -595,5 +595,6 @@ button:active{
     }
     .display-card{
         display: flex;
+        justify-content: space-between;
     }
 }
