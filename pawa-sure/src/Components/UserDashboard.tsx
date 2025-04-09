@@ -7,6 +7,7 @@ import img1 from '../assets/images/plug.svg'
 import img2 from '../assets/images/thunder.svg'
 import img3 from '../assets/images/meter-usage-icon.svg'
 import img4 from '../assets/images/cross.svg'
+import TransactionHistory from './History';
 
 const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
@@ -76,6 +77,7 @@ const toggleBalance = () => {
           <p>300kWh</p>
         </div>
       </div>
+      <TransactionHistory />
       <BottomNav />
     </div>
   )
