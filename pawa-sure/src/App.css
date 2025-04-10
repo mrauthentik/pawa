@@ -827,4 +827,19 @@ button:active{
 
 
   /* Settings Styles */
-  
+  .settings{
+    background-color: var(--bg-color);
+    padding: 2rem;
+    .header{
+        display: flex;
+        gap: 6rem;
+        margin-bottom: 3rem;
+        h2{
+            font-weight: 400;
+        }
+
+    }
+    .sets{
+        
+    }
+  }
