@@ -34,14 +34,14 @@ const Settings:React.FC = ()=> {
             </div>
             <div className="sets">
             {settings.map((items,index)=>(
-                <div key={index}>
-                    <div className="name">
+                
+                    <div className="name" key={index}>
                         <img src={items.img} alt="" />
                         <p>{items.title}</p>
-                    </div>
                     <div className="icon">
                        <img src={items.icon} alt="" />
                     </div>
+                    
                 </div>
             ))}
             </div>
