@@ -1,4 +1,3 @@
-import { UploadFile } from '@mui/icons-material'
 import React from 'react'
 
 const settings = [
@@ -14,15 +13,15 @@ const Settings:React.FC = ()=> {
     return (
         <div className='settings'>
             <div className="header">
-                <div className="text"><h2>Profile</h2></div>
                 <div className="icon"><img src="" alt="" /></div> 
+                <div className="text"><h2>Settings</h2></div>
             </div>
-            <div className="avatar">
+            {/* <div className="avatar">
                 <div className="image-holder">
                     <img src="" alt="" />
                     <UploadFile />
                 </div>
-            </div>
+            </div> */}
             <div className="details">
                 <div className="name">Charles Babbage</div>
                 <div className="email">
