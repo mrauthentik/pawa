@@ -9,6 +9,7 @@ import FailedMeterNumber from '../Components/Auth/FailedMeterNo'
 import NotFound from '../Components/NotFound'
 import OnboardingSlider from '../Components/onBoardingSlider'
 import UserDashboard from '../Components/UserDashboard'
+import Settings from '../Components/Settings'
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     {
         path:'/dashboard',
         element: <UserDashboard />
+    },
+    {
+        path:'/settings',
+        element: <Settings />
     },
     {
         path:'*',
