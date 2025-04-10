@@ -32,18 +32,6 @@ const Settings:React.FC = ()=> {
                 <div className="icon" onClick={handleNavigate}><ArrowBack /></div> 
                 <div className="text"><h2>Settings</h2></div>
             </div>
-            {/* <div className="avatar">
-                <div className="image-holder">
-                    <img src="" alt="" />
-                    <UploadFile />
-                </div>
-            </div> */}
-            {/* <div className="details">
-                <div className="name">Charles Babbage</div>
-                <div className="email">
-                 <p>charles_babbage12@gmail.com</p>
-                </div>
-            </div> */}
             <div className="sets">
             {settings.map((items,index)=>(
                 <div key={index}>
