@@ -749,7 +749,8 @@ button:active{
      .bank{
         display: flex;
         padding: 15px 10px;
-        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        border: 1px solid gray;
+        /* box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2); */
         border-radius: 10px;
         margin: 1rem 0;
         gap: 0.5rem;
@@ -796,7 +797,8 @@ button:active{
         .card,.bank-transfer{
             display: flex;
             justify-content: space-between;
-            box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+            border: 1px solid gray;
+            /* box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2); */
             padding: 15px 10px;
             border-radius: 10px;
             cursor: pointer;
