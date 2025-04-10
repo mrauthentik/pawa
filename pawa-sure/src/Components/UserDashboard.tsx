@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import BottomNav from './BottomNav';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import img from '../assets/images/avatar.svg'
@@ -66,9 +67,12 @@ const togglePayModal = () =>{
           <img src={img2} alt="" />
           <p>Pay for Light</p>
         </div>
+       
         <div className='card-2'>
+          <Link to='/meter'>
           <img src={img1} alt="" />
           <p>Add new Meter</p>
+          </Link>
         </div>
       </div>
       <div className="meter-usage">
