@@ -81,28 +81,31 @@ const BottomNav: React.FC = () => {
             },
         }}
         />
-        <BottomNavigationAction label="Settings" icon={<SettingsIcon className='bottom-icon'/>} 
-         sx={{
-            color: value === 0 ? '#474747' : "#474747",
-            
-            '&.Mui-selected': {
-              color: '#FFC107',
-            },
-            '&:hover':{
-                backgroundColor: 'transparent',
-            },
-            '& .MuiSvgIcon-root':{
-                fontSize: '1.9rem'
-            },
-            '&.MuiBottomNavigationAction-label': {
-              fontSize: '52px',
-              fontFamily: 'Poppins, sans-serif',
-              fontWeight: value === 0 ? '600' : '400',
-              
-            },
-        }}
-        />
-      </BottomNavigation>
+         <Link to='/settings'>
+            <BottomNavigationAction label="Settings" icon={<SettingsIcon className='bottom-icon'/>} 
+            sx={{
+                color: value === 0 ? '#474747' : "#474747",
+                
+                '&.Mui-selected': {
+                  color: '#FFC107',
+                },
+                '&:hover':{
+                    backgroundColor: 'transparent',
+                },
+                '& .MuiSvgIcon-root':{
+                    fontSize: '1.9rem'
+                },
+                '&.MuiBottomNavigationAction-label': {
+                  fontSize: '52px',
+                  fontFamily: 'Poppins, sans-serif',
+                  fontWeight: value === 0 ? '600' : '400',
+                  
+                },
+            }}
+            />
+          </Link>
+       </BottomNavigation>
+       
     </div>
   );
 };
