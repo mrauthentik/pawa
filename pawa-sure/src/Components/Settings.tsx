@@ -1,11 +1,12 @@
 import React from 'react'
 
 const settings = [
-    {img:'', title:'Edit Profile', icon:''},
+    {img:'', title:'Payment & Wallet', icon:''},
     {img:'', title:'Notification', icon:''},
-    {img:'', title:'Language', icon:''},
     {img:'', title:'Security', icon:''},
     {img:'', title:'Dark Mode', icon:''},
+    {img:'', title:'Language', icon:''},
+    {img:'', title:'Help & Support', icon:''},
     {img:'', title:'About', icon:''},
 ]
 
