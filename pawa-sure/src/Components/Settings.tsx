@@ -1,6 +1,6 @@
 import { ArrowBack } from '@mui/icons-material'
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import wallet from '../assets/images/wallet.svg'
 import bell from '../assets/images/bell.svg'
 import lock from '../assets/images/lock.svg'
@@ -47,7 +47,7 @@ const Settings:React.FC = ()=> {
                 </div>
             ))}
             </div>
-            <button> <img src={out} alt="" /> Log Out</button>
+            <button> <img src={out} alt="" /><Link to='/signin' className='link'>Log Out</Link>  </button>
         </div>
     )
 }
