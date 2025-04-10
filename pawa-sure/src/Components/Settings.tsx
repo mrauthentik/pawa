@@ -1,3 +1,4 @@
+import { ArrowBack } from '@mui/icons-material'
 import React from 'react'
 
 const settings = [
@@ -14,7 +15,7 @@ const Settings:React.FC = ()=> {
     return (
         <div className='settings'>
             <div className="header">
-                <div className="icon"><img src="" alt="" /></div> 
+                <div className="icon"><ArrowBack /></div> 
                 <div className="text"><h2>Settings</h2></div>
             </div>
             {/* <div className="avatar">
