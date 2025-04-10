@@ -1,5 +1,6 @@
 import { ArrowBack } from '@mui/icons-material'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const settings = [
     {img:'', title:'Payment & Wallet', icon:''},
@@ -12,10 +13,14 @@ const settings = [
 ]
 
 const Settings:React.FC = ()=> {
+    const navigate = useNavigate()
+    const handleNavigate = ()=>{
+        navigate('/dashboard')
+    }
     return (
         <div className='settings'>
             <div className="header">
-                <div className="icon"><ArrowBack /></div> 
+                <div className="icon" onClick={handleNavigate}><ArrowBack /></div> 
                 <div className="text"><h2>Settings</h2></div>
             </div>
             {/* <div className="avatar">
