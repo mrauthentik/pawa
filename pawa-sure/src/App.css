@@ -765,34 +765,34 @@ button:active{
      .payment-options{
         margin-bottom: 3rem;
        margin-top: 1rem;
-       input[type='radio'] {
-        appearance: none; /* Remove default styling */
-        -webkit-appearance: none;
-        width: 18px;
-        height: 18px;
-        border: 2px solid #000000;
-        border-radius: 50%;
-        outline: none;
-        cursor: pointer;
-        position: relative;
-        transition: border 0.2s ease;
-      }
-      
-      input[type='radio']:checked {
-        border-color: var(--btn-active);
-        background-color:var(--bg-color);
-      }
-      
-      input[type='radio']:checked::after {
-        content: '';
-        position: absolute;
-        top: 3px;
-        left: 3.2px;
-        width: 8px;
-        height: 8px;
-        background: var(--btn-active);  /*inner dot color */
-        border-radius: 50%;
-      }
+            input[type='radio'] {
+                appearance: none; /* Remove default styling */
+                -webkit-appearance: none;
+                width: 18px;
+                height: 18px;
+                border: 2px solid #000000;
+                border-radius: 50%;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                transition: border 0.2s ease;
+            }
+            
+            input[type='radio']:checked {
+                border-color: var(--btn-active);
+                background-color:var(--bg-color);
+            }
+            
+            input[type='radio']:checked::after {
+                content: '';
+                position: absolute;
+                top: 3px;
+                left: 3.2px;
+                width: 8px;
+                height: 8px;
+                background: var(--btn-active);  /*inner dot color */
+                border-radius: 50%;
+            }
         .card,.bank-transfer{
             display: flex;
             justify-content: space-between;
