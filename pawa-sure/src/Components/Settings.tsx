@@ -36,8 +36,10 @@ const Settings:React.FC = ()=> {
             {settings.map((items,index)=>(
                 
                     <div className="name" key={index}>
+                        <div className="items">
                         <img src={items.img} alt="" />
                         <p>{items.title}</p>
+                        </div>
                     <div className="icon">
                        <img src={items.icon} alt="" />
                     </div>

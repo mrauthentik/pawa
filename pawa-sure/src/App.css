@@ -843,8 +843,14 @@ button:active{
        .name{
         background-color: #FAFAFA;
         padding: 10px;
-        border-radius: ;
+        border-radius: 10px;
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        .items{
+            display: flex;
+            gap: 1rem;
+        }
        }
     }
   }
