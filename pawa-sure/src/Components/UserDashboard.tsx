@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import BottomNav from './BottomNav';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import img from '../assets/images/avatar.svg'
@@ -15,6 +15,8 @@ const UserDashboard:React.FC = () => {
 const [showBalance, setShowBalance] = React.useState(false)
 const [showPayModal, setShowPayModal] = React.useState(false)
 
+const navigate = useNavigate()
+
 const getGreeting = () => {
   const hour = new Date().getHours();
   if (hour < 12) return '🌻 Good Morning';
@@ -28,13 +30,15 @@ const toggleBalance = () => {
 const togglePayModal = () =>{
   setShowPayModal(prev => !prev)
 }
-
+const toggleProfile = () =>{
+  navigate('/profile')
+}
   return (
     <div className='dashboard-container'>
       <div className="header">
         <div className="profile">
           <div className="profile-img">
-            <img src={img} alt="" />
+            <img src={img} alt="" onClick={toggleProfile} />
           </div>
           <div className="header-text">
             <h2>{getGreeting()},</h2>
