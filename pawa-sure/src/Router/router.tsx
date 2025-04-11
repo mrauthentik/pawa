@@ -11,6 +11,7 @@ import OnboardingSlider from '../Components/onBoardingSlider'
 import UserDashboard from '../Components/UserDashboard'
 import Settings from '../Components/Settings'
 import Profile from '../Components/Profile'
+import EditProfile from '../Components/EditProfile'
 
 
 
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
     {
         path:'/profile',
         element: <Profile />
+    },
+    {
+        path:'/edit-profile',
+        element: <EditProfile />
     },
     {
         path:'*',
