@@ -4,18 +4,20 @@ import React from 'react'
 import avatar from '../assets/images/profile-img.svg'
 
 
-const details = [
-    {title: 'Username', item:'Charles_bababage'},
-    {title: 'First Name', item:'Charles'},
-    {title: 'Last Name', item:'Bababage'},
-    {title: 'Phone Number', item:'+234822603666'},
-    {title: 'Email', item:'Charles_bababage12@gmail.com'},
-    {title: 'Gender', item:'Male'},
-    // {title: 'Linked Meter', item:'Osaporo Estate and Housing  12348888'},
-    {title: 'Linked Meter', item:`Charles Housing 86896898`}
-]
 
 const Profile:React.FC = () => {
+
+    const details = [
+        {title: 'Username', item:'Charles_babage'},
+        {title: 'First Name', item:'Charles'},
+        {title: 'Last Name', item:'Bababage'},
+        {title: 'Phone Number', item:'+234822603666'},
+        {title: 'Email', item:'Charles_bababage12@gmail.com'},
+        {title: 'Gender', item:'Male'},
+        // {title: 'Linked Meter', item:'Osaporo Estate and Housing  12348888'},
+        {title: 'Linked Meter', item:`Charles Housing 86896898`}
+    ]
+
     const navigate = useNavigate()
     const handleCancel = () => {
         navigate('/dashboard')
