@@ -10,6 +10,7 @@ import NotFound from '../Components/NotFound'
 import OnboardingSlider from '../Components/onBoardingSlider'
 import UserDashboard from '../Components/UserDashboard'
 import Settings from '../Components/Settings'
+import Profile from '../Components/Profile'
 
 
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
     {
         path:'/settings',
         element: <Settings />
+    },
+    {
+        path:'/profile',
+        element: <Profile />
     },
     {
         path:'*',
