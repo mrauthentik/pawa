@@ -11,7 +11,8 @@ const details = [
     {title: 'Phone Number', item:'+234822603666'},
     {title: 'Email', item:'Charles_bababage12@gmail.com'},
     {title: 'Gender', item:'Male'},
-    {title: 'Linked Meter', item:'Osaporo Estate and Housing \n 12345667788888'},
+    // {title: 'Linked Meter', item:'Osaporo Estate and Housing  12348888'},
+    {title: 'Linked Meter', item:`Charles Housing 86896898`}
 ]
 
 const Profile:React.FC = () => {

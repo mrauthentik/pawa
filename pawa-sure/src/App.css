@@ -875,7 +875,7 @@ button:active{
     padding: 1.5rem 1rem;
     .header{
         display: flex;
-        gap: 7rem;
+        gap: 7.5rem;
         h2{
             font-weight: 600;
         }
@@ -897,8 +897,14 @@ button:active{
         .profile-items{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 1rem;
             h2{
                 font-size: 15px;
+                font-weight:500;
+            }
+            p{
+                font-size: 14px;
+                color: var(--small-text);
             }
         }
     }
