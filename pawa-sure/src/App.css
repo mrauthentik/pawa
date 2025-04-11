@@ -870,3 +870,36 @@ button:active{
   }
 
   /* Profile styling */
+  .profile-container{
+    background: var(--bg-color);
+    padding: 1.5rem 1rem;
+    .header{
+        display: flex;
+        gap: 7rem;
+        h2{
+            font-weight: 600;
+        }
+    }
+    .img-holder{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-weight: 500;
+        }
+    }
+    .profile-list{
+        background-color: white;
+        margin-top: 1rem;
+        padding: 1rem;
+        .profile-items{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                font-size: 15px;
+            }
+        }
+    }
+  }

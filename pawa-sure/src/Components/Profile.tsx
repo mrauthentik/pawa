@@ -20,7 +20,7 @@ const Profile:React.FC = () => {
         navigate('/dashboard')
     }
   return (
-    <div className='Profile'>
+    <div className='profile-container'>
        <div className="header">
         <div className="cancel" onClick={handleCancel}>
         <Cancel />
