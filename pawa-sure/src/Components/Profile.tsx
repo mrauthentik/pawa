@@ -1,6 +1,7 @@
 import { Cancel } from '@mui/icons-material'
 import { useNavigate, Link } from 'react-router-dom'
 import React from 'react'
+import avatar from '../assets/images/profile-img.svg'
 
 
 const details = [
@@ -27,7 +28,7 @@ const Profile:React.FC = () => {
          <h2>Profile</h2>
        </div>
        <div className="img-holder">
-        <img src="" alt="" />
+        <img src={avatar} alt="" />
         <div className="name"> 
             <h2>Charles Babbage</h2>
         </div>
